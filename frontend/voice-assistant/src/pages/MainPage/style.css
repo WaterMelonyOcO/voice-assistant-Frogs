@@ -4,6 +4,49 @@
     justify-content: space-between;
     align-items: flex-start;
 }
+.body-layout_leftside {
+
+}
+
+.main_header {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 50px 0 25px;
+}
+
+.banner {
+    background: var(--radial-gradient, radial-gradient(826.2% 153.83% at 1.39% 96.9%, #0265B0 0%, #0D8BC7 15.29%, #1AB3E2 43.09%, #0B82C6 71.25%, #014D9D 93.38%));
+    border-radius: 12px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.banner-header1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    left: 25px;
+    top: 45px;
+}
+
+.banner-header2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    left: 25px;
+    top: 155px;
+}
+
+.banner-desc {
+    font-size: 55px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    right: 25px;
+    bottom: 15px;
+}
 .cards-layout {
     display: grid;
     grid-template-columns: repeat(3, 320px);
@@ -11,5 +54,5 @@
     column-gap: 50px;
     row-gap: 30px;
     justify-content: flex-end;
-    margin-top: 50px;
+    margin: 50px 0 50px;
 }

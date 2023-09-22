@@ -19,8 +19,11 @@
     gap: 5px;
     padding: 20px;
     background-color: transparent;
+    text-decoration: none;
+    color: black;
 }
 .sidebar_link:hover {
     border-radius: 12px;
     background-color: #c5c5c5;
+    color: #fff;
 }
