@@ -1,7 +1,9 @@
-
 const express = require("express")
+const apiroute = require("./api")
 
 const app = express()
+
+app.use("/api", apiroute)
 
 app.get("/", (req, resp )=>{
     resp.send("<h1>test back request</h1>")
