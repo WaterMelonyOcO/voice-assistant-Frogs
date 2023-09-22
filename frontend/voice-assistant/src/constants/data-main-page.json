@@ -1,75 +1,88 @@
-{"data-main-page": [
-    {
-        "category": "appliances",
+{
+    "appliances": [
+      {
+        "id": 1,
         "name": "Электрическая плита FLAMA CE 32011 B коричневый",
         "price_before": 7999,
-        "price_after": 6999
-    },
-    {
-        "category": "appliances",
+        "price_after": 6999,
+        "image": "image_1.png"
+      },
+      {
+        "id": 2,
         "name": "Холодильник Bosch KGV36VI32S серебристый",
         "price_before": 23999,
-        "price_after": 20999
-    },
-    {
-        "category": "appliances",
+        "price_after": 20999,
+        "image": "./image_3.png"
+      },
+      {
+        "id": 3,
         "name": "Смартфон Apple iPhone 13 Pro 128GB зеленый",
         "price_before": 17999,
-        "price_after": 15999
-    },
-    {
-        "category": "appliances",
+        "price_after": 15999,
+        "image": "./image_3.png"
+      },
+      {
+        "id": 4,
         "name": "Камера Canon EOS R6 Kit 24-105mm f/4L IS USM",
         "price_before": 169999,
-        "price_after": 159999
-    },
-    {
-        "category": "appliances",
+        "price_after": 159999,
+        "image": "../images/image_4.png"
+      },
+      {
+        "id": 5,
         "name": "Ноутбук HP Pavilion 15-cs3013ur синий",
         "price_before": 36999,
-        "price_after": 32999
-    },
-    {
-        "category": "appliances",
+        "price_after": 32999,
+        "image": "../images/image_2.png"
+      },
+      {
+        "id": 6,
         "name": "Монитор Dell Ultrasharp U2719D черный",
         "price_before": 23999,
-        "price_after": 20999
-    },
-    {
-        "category": "appliances",
+        "price_after": 20999,
+        "image": "../images/image_5.png"
+      },
+      {
+        "id": 7,
         "name": "Пылесос Samsung VC18M31A0HP/WT белый",
         "price_before": 7999,
-        "price_after": 2999
-    },
-    {
-        "category": "appliances",
+        "price_after": 2999,
+        "image": "../images/image_1.png"
+      },
+      {
+        "id": 8,
         "name": "Стиральная машина Bosch WAJ20060OE белый",
         "price_before": 19999,
-        "price_after": 17999
-    },
-    {
-        "category": "appliances",
+        "price_after": 17999,
+        "image": "../images/image_3.png"
+      },
+      {
+        "id": 9,
         "name": "Фотокамера Sony Alpha a6400 Kit 16-50mm OSS чёрный",
         "price_before": 59999,
-        "price_after": 52999
-    },
-    {
-        "category": "appliances",
+        "price_after": 52999,
+        "image": "../images/image_4.png"
+      },
+      {
+        "id": 10,
         "name": "Смартфон Xiaomi Redmi Note 10 64GB серый",
         "price_before": 55999,
-        "price_after": 52999
-    },
-    {
-        "category": "appliances",
+        "price_after": 52999,
+        "image": "../images/image_5.png"
+      },
+      {
+        "id": 11,
         "name": "Графический планшет Wacom Intuos Pro S PTH-460",
         "price_before": 9999,
-        "price_after": 7999
-    },
-    {
-        "category": "appliances",
+        "price_after": 7999,
+        "image": "../images/image_1.png"
+      },
+      {
+        "id": 12,
         "name": "Наушники Sennheiser HD 660 S черный",
         "price_before": 27999,
-        "price_after": 23999
-    }
-
-]}
+        "price_after": 23999,
+        "image": "../images/image_1.png"
+      }
+    ]
+  }
