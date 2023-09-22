@@ -8,4 +8,17 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
+    max-height: 50px;
+}
+.btn-outlined:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+    border: 2px solid #276096;
+}
+.btn-outlined:active {
+    background-color: rgb(193, 207, 219);
+    cursor: pointer;
+}
+.btn-outlined:focus {
+    border: 3px solid black;
 }

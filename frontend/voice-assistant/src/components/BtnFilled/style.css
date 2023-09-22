@@ -8,4 +8,19 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
+    height: 100%;
+    max-height: 65px;
+}
+
+.btn-filled:hover {
+    background-color: #2f71af;
+    cursor: pointer;
+}
+
+.btn-filled:active {
+    background-color: #265a8b;
+    cursor: pointer;
+}
+.btn-filled:focus {
+    border: 3px solid black;
 }
