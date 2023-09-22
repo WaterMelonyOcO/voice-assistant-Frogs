@@ -8,6 +8,7 @@ import heartIcon from '../../images/heart.png';
 import carttIcon from '../../images/cart.png';
 import profileIcon from '../../images/profilw.png';
 import InputSearch from '../InputSearch/InputSearch';
+import { Link } from "react-router-dom";
 export default function Header() {
     return ( <>
         <div className="firstLine">
@@ -24,7 +25,7 @@ export default function Header() {
     <header className='header'>
 
         <span className='header-one_block'>
-            <img src={logo} alt="нажмите сюда для перехода на главную страницу"/>
+        <Link to='/catalog'><img src={logo} alt="нажмите сюда для перехода на главную страницу"/></Link>
 
             <InputSearch />
            
