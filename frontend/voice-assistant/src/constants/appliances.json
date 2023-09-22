@@ -1,0 +1,73 @@
+{
+    "appliances" : [
+        {
+            "category": "appliances",
+            "name": "Холодильник Bosch KGV36VI32S серебристый",
+            "price_before": 23999,
+            "price_after": 20999
+        },
+        {
+            "category": "appliances",
+            "name": "Пылесос Samsung VC18M31A0HP/WT белый",
+            "price_before": 7999,
+            "price_after": 2999
+        },
+        {
+            "category": "appliances",
+            "name": "Стиральная машина Bosch WAJ20060OE белый",
+            "price_before": 19999,
+            "price_after": 17999
+        },
+        {
+            "category": "appliances",
+            "name": "Газовая плита Bosch HGA323150R белый",
+            "price_before": 7499,
+            "price_after": 5299
+        },
+        {
+            "category": "appliances",
+            "name": "Холодильник LG GA-B489 YEQZ серебристый",
+            "price_before": 56499,
+            "price_after": 52599
+        },
+        {
+            "category": "appliances",
+            "name": "Встраиваемый холодильник Siemens KI22LAF30 белый",
+            "price_before": 11499,
+            "price_after": 9599
+        }, 
+        {
+            "category": "appliances",
+            "name": "Микроволновая печь Samsung MS23F301EAW/WT белый",
+            "price_before": 10499,
+            "price_after": 6599
+        },
+        {
+            "category": "appliances",
+            "name": "Вытяжка Maunfeld MCA 60 E BL чёрный",
+            "price_before": 9499,
+            "price_after": 7599
+        },
+        {
+            "category": "appliances",
+            "name": "Вытяжка Bosch DHL785C белый",
+            "price_before": 19499,
+            "price_after": 17599
+        },
+        {
+            "category": "appliances",
+            "name": "Посудомоечная машина Electrolux ESF5532LOX белый",
+            "price_before": 89499,
+            "price_after": 75599
+        },
+        {
+            "category": "appliances",
+            "name": "Чайник Bosch TWK3A011 серебристый",
+            "price_before": 1499,
+            "price_after": 599
+        }
+
+
+        
+    ]
+}

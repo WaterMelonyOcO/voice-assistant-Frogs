@@ -1,0 +1,72 @@
+{
+    "computers" : [
+        {
+            "name": "Настольный компьютер Acer Aspire TC-895-UA92",
+            "price_before": 34999,
+            "price_after": 31999
+          },
+          
+          {
+            "category": "бытовая техника",
+            "name": "Геймерский ПК Alienware Aurora R12",
+            "price_before": 89999,
+            "price_after": 84999
+          },
+          
+          {
+            "category": "бытовая техника",
+            "name": "Ноутбук ASUS ROG Zephyrus G14 GA401IV-HE188T",
+            "price_before": 84999,
+            "price_after": 79999
+          },
+          
+          {
+            "category": "бытовая техника",
+            "name": "Ноутбук HP Spectre x360 14-ea0000ur",
+            "price_before": 129999,
+            "price_after": 119999
+          },
+          
+          {
+            "category": "бытовая техника",
+            "name": "Беспроводные наушники Sony WH-1000XM4",
+            "price_before": 19999,
+            "price_after": 17999
+          },
+          
+          {
+            "category": "бытовая техника",
+            "name": "Гарнитура HyperX Cloud II Red",
+            "price_before": 7999,
+            "price_after": 6999
+          },
+          
+          {
+            "category": "бытовая техника",
+            "name": "Игровая мышка Logitech G Pro X Superlight",
+            "price_before": 8999,
+            "price_after": 7999
+          },
+          
+          {
+            "category": "бытовая техника",
+            "name": "Беспроводная мышь Microsoft Modern Mobile",
+            "price_before": 2999,
+            "price_after": 2499
+          },
+          
+          {
+            "category": "бытовая техника",
+            "name": "Беспроводная колонка JBL Charge 4 черная",
+            "price_before": 9999,
+            "price_after": 8999
+          },
+          
+          {
+            "category": "бытовая техника",
+            "name": "Bluetooth колонка Ultimate Ears WONDERBOOM 2",
+            "price_before": 4999,
+            "price_after": 4499
+          }
+    ]
+}

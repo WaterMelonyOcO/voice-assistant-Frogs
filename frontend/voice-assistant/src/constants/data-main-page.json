@@ -1,0 +1,75 @@
+{"data-main-page": [
+    {
+        "category": "appliances",
+        "name": "Электрическая плита FLAMA CE 32011 B коричневый",
+        "price_before": 7999,
+        "price_after": 6999
+    },
+    {
+        "category": "appliances",
+        "name": "Холодильник Bosch KGV36VI32S серебристый",
+        "price_before": 23999,
+        "price_after": 20999
+    },
+    {
+        "category": "appliances",
+        "name": "Смартфон Apple iPhone 13 Pro 128GB зеленый",
+        "price_before": 17999,
+        "price_after": 15999
+    },
+    {
+        "category": "appliances",
+        "name": "Камера Canon EOS R6 Kit 24-105mm f/4L IS USM",
+        "price_before": 169999,
+        "price_after": 159999
+    },
+    {
+        "category": "appliances",
+        "name": "Ноутбук HP Pavilion 15-cs3013ur синий",
+        "price_before": 36999,
+        "price_after": 32999
+    },
+    {
+        "category": "appliances",
+        "name": "Монитор Dell Ultrasharp U2719D черный",
+        "price_before": 23999,
+        "price_after": 20999
+    },
+    {
+        "category": "appliances",
+        "name": "Пылесос Samsung VC18M31A0HP/WT белый",
+        "price_before": 7999,
+        "price_after": 2999
+    },
+    {
+        "category": "appliances",
+        "name": "Стиральная машина Bosch WAJ20060OE белый",
+        "price_before": 19999,
+        "price_after": 17999
+    },
+    {
+        "category": "appliances",
+        "name": "Фотокамера Sony Alpha a6400 Kit 16-50mm OSS чёрный",
+        "price_before": 59999,
+        "price_after": 52999
+    },
+    {
+        "category": "appliances",
+        "name": "Смартфон Xiaomi Redmi Note 10 64GB серый",
+        "price_before": 55999,
+        "price_after": 52999
+    },
+    {
+        "category": "appliances",
+        "name": "Графический планшет Wacom Intuos Pro S PTH-460",
+        "price_before": 9999,
+        "price_after": 7999
+    },
+    {
+        "category": "appliances",
+        "name": "Наушники Sennheiser HD 660 S черный",
+        "price_before": 27999,
+        "price_after": 23999
+    }
+
+]}
