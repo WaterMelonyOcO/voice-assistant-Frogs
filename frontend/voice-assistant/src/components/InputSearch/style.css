@@ -1,0 +1,22 @@
+.input-with-icon {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+.input-with-icon input {
+    flex: 1;
+    padding-left: 10px;
+  }
+.input-icon {
+    margin-right: 10px;
+}
+
+.search_input {
+    width: 30em;
+    height: 45px;
+    /* border: 1px solid gray; */
+    border: none;
+    padding: 20px 10px 20px 40px;
+}
