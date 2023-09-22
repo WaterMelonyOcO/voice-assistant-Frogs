@@ -1,0 +1,11 @@
+.btn-filled {
+    background-color: #3182CE;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
