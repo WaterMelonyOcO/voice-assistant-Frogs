@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import './style.css';
+import prof from '../../images/profilw.png' 
 
 export default function LoginPage() {
     return(
@@ -15,7 +16,12 @@ export default function LoginPage() {
                 <input type="password" name="password" maxlength="8" id="password" placeholder='Введите пароль' className='form-input'/>
         </span>
 
-        <Link to="/main"><input type='submit' value="Войти" name="submit" className='form-btn'></input></Link>
+        <Link to="/main">
+            <span className='btn_with_icon'>
+                <input type='submit' value="Войти" name="submit" className='form-btn'/>
+                <img src={prof} alt="" className='icon'/>
+            </span>
+            </Link>
             
         </form>
     )

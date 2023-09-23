@@ -13,11 +13,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<MainPage/>} />
+      <Route path="/" element={<LoginPage />} />
+        <Route path="/main" element={<MainPage/>} />
         <Route path='/appliances' element={<AppliancesPage/>} />
         <Route path='/smartphone' element={<SmartPhonesPage/>}/>
         <Route path='/computers'element={<ComputersPage/>}/>
-        <Route path="/" element={<LoginPage />} />
         <Route path="/main" element={<MainPage/>} />
         <Route path='cart/order' element={<OrderRegistration />} />
         <Route path="/favourites" element={<FavouritesPage />} />
