@@ -1,6 +1,8 @@
 {
     "computers" : [
         {
+          
+          "category": "бытовая техника",
             "name": "Настольный компьютер Acer Aspire TC-895-UA92",
             "price_before": 34999,
             "price_after": 31999

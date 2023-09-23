@@ -1,14 +1,16 @@
 import ProductCard from "../../components/ProductCard/ProductCard";
 import "./style.css";
-import smartphones from '../../constants/smartphones.json';
+
+import smartphone from '../../constants/smartphones.json';
+import line from '../../images/line.png';
 
 
-export default function SmartPhonesPage() {
-    let mainData = Object.values(smartphones)[0];
+export default function SmartPhonePage() {
+    let mainData = Object.values(smartphone)[0];
     return(<>
             <div className="body-layout_leftside">
                 <h2 className="main_header">
-                    Смартфоны и фототехника
+                    Пк, ноутбуки, переферия
                 </h2>
                 <div className="cards-layout">
                         { mainData.map((product) => (

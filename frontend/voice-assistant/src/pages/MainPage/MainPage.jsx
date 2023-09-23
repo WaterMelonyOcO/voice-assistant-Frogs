@@ -6,11 +6,14 @@ import ProductCard from "../../components/ProductCard/ProductCard";
 import "./style.css";
 import dataMainPage from '../../constants/data-main-page.json';
 import line from '../../images/line.png';
+import VoiseAssistant from '../../components/VoiseAssistant/VoiseAssistant'
+
 
 export default function MainPage() {
 
 
     let mainData = Object.values(dataMainPage)[0];
+
     return(<>
         {/* <Header /> */}
 
@@ -36,7 +39,9 @@ export default function MainPage() {
                         { mainData.map((product) => (
                         <ProductCard key={product.id} data={product} />
                     ))}
+
                 </div>
+                <VoiseAssistant/>
             </div>
         {/* </div> */}
         
