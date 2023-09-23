@@ -109,7 +109,7 @@ const deleteContrast = () => {
                         Данные настройки помогут Вам изменить сайт так, как Вам будет удобно.
                         </p>
 
-                    <span className='body-buttons_wraper'>
+                    {/* <span className='body-buttons_wraper'>
                         <h4 className='wraper-h4'>
                         Специальный режим
                         </h4>
@@ -122,7 +122,7 @@ const deleteContrast = () => {
                             Отключить
                             </button>
                         </span>
-                    </span>
+                    </span> */}
 
                     <span className='body-buttons_wraper'>
                         <h4 className='wraper-h4'>
