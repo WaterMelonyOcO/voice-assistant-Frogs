@@ -9,16 +9,19 @@
     justify-content: center;
     align-items: center;
     transform: scale(0);
+    z-index: 99
 }
 
 .modal.active {
     transform: scale(1);
+    z-index: 99
 }
 
 .modal_content {
     padding: 25px;
     background-color: #fff;
     border-radius: 12px;
+    z-index: 99;
     /* width: max-content; */
 }
 
@@ -98,3 +101,8 @@
 .wordspacing2 {
     letter-spacing: 0.7px;
 }
+
+/*******************/
+.high-contrast {
+    filter: grayscale(100%);
+  }

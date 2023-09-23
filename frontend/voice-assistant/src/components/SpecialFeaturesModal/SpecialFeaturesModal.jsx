@@ -4,9 +4,23 @@ import okIcon from '../../images/success.png';
 import BtnOutlined from '../BtnOutlined/BtnOutlined';
 import BtnFilled from '../BtnFilled/BtnFilled';
 import { useState } from 'react';
+import { useEffect } from 'react';
 
 export default function SpecialFeaturesModal({active, setActive}) {
     const [activeBtnAcc, setActiveBtnAcc] = useState(false);
+
+    /* for contrast */
+    const [contrast, setContrast] = useState(false);
+    useEffect(() => {
+        if (contrast) {
+          document.body.classList.add('high-contrast');
+        } else {
+          document.body.classList.remove('high-contrast');
+        }
+      }, [contrast]);
+      const handleContrastToggle = () => {
+        setContrast(!contrast);
+      };
     return(
         <div className={active ? "modal active" : "modal"}>
             <div className="modal_content" onClick={e => e.stopPropagation()}>
@@ -27,11 +41,11 @@ export default function SpecialFeaturesModal({active, setActive}) {
                         Специальный режим
                         </h4>
                         <span className='wrapper'>
-                            <button className={activeBtnAcc ? "wraper-btn active" : "wraper-btn no_active"} onClick={() => setActiveBtnAcc(!false)}>
+                            <button className="wraper-btn">
                             Включить
                             </button>
 
-                            <button className={activeBtnAcc ? "wraper-btn active" : "wraper-btn no_active"} onClick={() => setActiveBtnAcc(!false)}>
+                            <button className="wraper-btn">
                             Отключить
                             </button>
                         </span>
@@ -42,14 +56,14 @@ export default function SpecialFeaturesModal({active, setActive}) {
                         Размер шрифта
                         </h4>
                         <span className='wrapper'>
-                            <button className={active ? "wraper-btn active" : "wraper-btn no_active"} onClick={() => setActiveBtnAcc(!false)}>
+                            <button className="wraper-btn">
                             100%
                             </button>
 
-                            <button className={active ? "wraper-btn active" : "wraper-btn no_active"} onClick={() => setActiveBtnAcc(!false)}>
+                            <button className="wraper-btn">
                             150%
                             </button>
-                            <button className={active ? "wraper-btn active" : "wraper-btn no_active"} onClick={() => setActiveBtnAcc(!false)}>
+                            <button className="wraper-btn">
                             200%
                             </button>
                         </span>
@@ -60,14 +74,14 @@ export default function SpecialFeaturesModal({active, setActive}) {
                         Расстояние между буквами
                         </h4>
                         <span className='wrapper'>
-                            <button className={active ? "wraper-btn active" : "wraper-btn no_active"} onClick={() => setActiveBtnAcc(!false)}>
+                            <button className="wraper-btn">
                             Рекомендуемое
                             </button>
 
-                            <button className={active ? "wraper-btn active wordspacing1" : "wraper-btn no_active wordspacing1"} onClick={() => setActiveBtnAcc(!false)}>
+                            <button className="wraper-btn">
                             Большое
                             </button>
-                            <button className={active ? "wraper-btn active wordspacing2" : "wraper-btn no_active wordspacing2"} onClick={() => setActiveBtnAcc(!false)}>
+                            <button className="wraper-btn">
                             Очень большое
                             </button>
                         </span>
@@ -78,11 +92,11 @@ export default function SpecialFeaturesModal({active, setActive}) {
                         Цвет шрифта и фона
                         </h4>
                         <span className='wrapper'>
-                            <button className={active ? "wraper-btn active" : "wraper-btn no_active"} onClick={() => setActiveBtnAcc(!false)}>
+                            <button className="wraper-btn">
                             Стандартный
                             </button>
 
-                            <button className={active ? "wraper-btn active" : "wraper-btn no_active"} onClick={() => setActiveBtnAcc(!false)}>
+                            <button className={active ? "wraper-btn active" : "wraper-btn no_active"} onClick={handleContrastToggle}>
                             Контрастный
                             </button>
                        </span>
@@ -93,11 +107,11 @@ export default function SpecialFeaturesModal({active, setActive}) {
                         Изображения
                         </h4>
                         <span className='wrapper'>
-                            <button className={active ? "wraper-btn active" : "wraper-btn no_active"} onClick={() => setActiveBtnAcc(!false)}>
+                            <button className="wraper-btn">
                             Цветные
                             </button>
 
-                            <button className={active ? "wraper-btn active" : "wraper-btn no_active"} onClick={() => setActiveBtnAcc(!false)}>
+                            <button className="wraper-btn">
                             Отключить
                             </button>
                        </span>

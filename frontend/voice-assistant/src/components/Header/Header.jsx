@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 import SpecialFeaturesModal from "../SpecialFeaturesModal/SpecialFeaturesModal";
 import { useState } from "react";
 export default function Header() {
-    const [modalActive, setModalActive] = useState(true);
+    const [modalActive, setModalActive] = useState(!true);
     return ( <>
         <div className="firstLine">
             <span className='place'><img src={placeIcon} alt="иконка места"></img> <p>Краснодар</p></span>
