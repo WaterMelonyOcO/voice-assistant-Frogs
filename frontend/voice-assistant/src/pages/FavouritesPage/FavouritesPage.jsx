@@ -1,6 +1,6 @@
 import './style.css';
 import { useTranslation } from "react-i18next";
-
+import { Helmet } from 'react-helmet';
 
 export default function FavouritesPage() {
 
@@ -10,6 +10,10 @@ export default function FavouritesPage() {
       i18n.changeLanguage(language);
     };
     return (<>
+
+<Helmet>
+        <title>{t("title7")}</title>
+      </Helmet>
     <div className="body-layout_leftside">
         <h2 className="main_header">
             {t("heart")}

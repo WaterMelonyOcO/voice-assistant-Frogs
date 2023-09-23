@@ -16,19 +16,27 @@ export default function Catalog() {
     };
     return (
         <div className={styless.sidebar}> {/* Используем стиль из модуля */}
-            <h3 className={styless.sidebar__h3}>{t("header7")}</h3>
+            <h3 className={styless.sidebar__h3} aria-label="Каталог" role='contentinfo'>{t("header7")}</h3>
+            <ul>
+                <li>
             <Link to="/appliances" className={`${styless.sidebar_link} ${location.pathname === "/appliances" ? styless.active : ''}`}>
                 <img src={oneIcon} alt=""/>
                 {t("header2")}
             </Link>
+            </li>
+            <li>
             <Link to="/smartphone" className={`${styless.sidebar_link} ${location.pathname === "/smartphone" ? styless.active : ''}`}>
                 <img src={twoIcon} alt=""/>
                 {t("header3")}
             </Link>
+            </li>
+            <li>
             <Link to="/computers" className={`${styless.sidebar_link} ${location.pathname === "/computers" ? styless.active : ''}`}>
                 <img src={threeIcon} alt=""/>
                 {t("header4")}
             </Link>
+            </li>
+            </ul>
         </div>
     )
 }

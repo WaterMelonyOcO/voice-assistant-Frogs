@@ -3,6 +3,7 @@ import BtnFilled from "../../components/BtnFilled/BtnFilled";
 import cartIconWh from '../../images/cart_white.svg';
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { Helmet } from 'react-helmet';
 
 export default function CartPage() {
 
@@ -12,6 +13,11 @@ export default function CartPage() {
       i18n.changeLanguage(language);
     };
     return (<>
+
+<Helmet>
+        <title>{t("title8")}</title>
+      </Helmet>
+
     <div className="body-layout_leftside">
         <h2 className="main_header">
            {t("cart")}

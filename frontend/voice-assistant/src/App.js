@@ -20,6 +20,7 @@ import saverIcon from './images/saver.png';
 import { ImageToggleProvider } from './components/ImageToggleContext/ImageToggleContext';
 import { useTranslation } from "react-i18next";
 
+
 function App() {
 
   const { t, i18n } = useTranslation();
@@ -29,7 +30,8 @@ function App() {
   };
 
   const [modalActive, setModalActive] = useState(!true);
-  return (
+  return ( <>
+  
     <ImageToggleProvider>
     <BrowserRouter>
 
@@ -43,12 +45,12 @@ function App() {
     <div className="app-container">
 
     <div className="firstLine">
-            <span className='place'><img src={placeIcon} alt="иконка места"></img> <p>{t("city")}</p></span>
+            <span className='place'><img src={placeIcon} alt=""></img> <p>{t("city")}</p></span>
         <span className='btn-layout'>
 
-            <button className='btn_header btn-lang' title="Cмена языка" onClick={() => changeLanguage("en")}><img src={worldIcon} alt="смена языка"/> {t("lang")}</button>
-            <button className='btn_header btn-acc' onClick={() => setModalActive(true)} title="Кнопка редактирования страницы со спец. возможностями"><img src={pepIcon} alt="спец.возможности"/> {t("one_btn")}</button>
-            <button className='btn_header btn-help' title="Кнопка открытия голосового помощника"><img src={saverIcon} alt="голосовой помощник"/>{t("two_btn")}</button>
+            <button className='btn_header btn-lang' title={t("btn1")} onClick={() => changeLanguage("en")}><img src={worldIcon} alt=""/> {t("lang")}</button>
+            <button className='btn_header btn-acc' onClick={() => setModalActive(true)} title={t("btn2")}><img src={pepIcon} alt=""/> {t("one_btn")}</button>
+            <button className='btn_header btn-help' title={t("btn3")}><img src={saverIcon} alt=""/>{t("two_btn")}</button>
 
         </span>
 
@@ -77,7 +79,7 @@ function App() {
     </BrowserRouter>
     </ImageToggleProvider>
 
-  );
+  </>);
 }
 
 export default App;

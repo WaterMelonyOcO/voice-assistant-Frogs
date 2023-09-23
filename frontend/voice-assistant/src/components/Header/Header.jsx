@@ -34,19 +34,19 @@ export default function Header() {
 
         <nav className='header__nav'>
             <Link to="/favourites" className="nav-link">
-                <button className='btn_header btn-nav1'>
-                <img src={heartIcon} alt={t("alt_heart")}/>
-                {t("heart")}</button>
+                <div role="button" className='btn_header btn-nav1'>
+                <img src={heartIcon} alt=""/>
+                {t("heart")}</div>
             </Link>
             <Link to="/cart" className="nav-link">
-                <button className='btn_header btn-nav1'>
-                <img src={carttIcon} alt={t("alt_cart")}/>
-                {t("cart")}</button>
+                <div role="button" className='btn_header btn-nav1'>
+                <img src={carttIcon} alt=""/>
+                {t("cart")}</div>
             </Link>
             <Link to="/" className="nav-link">
-                <button className='btn_header btn-nav1'>
-                <img src={profileIcon} alt={t("alt_profile")}/>
-                {t("profile")}</button>
+                <div role="button" className='btn_header btn-nav1'>
+                <img src={profileIcon} alt=""/>
+                {t("profile")}</div>
                 </Link>
         </nav>
     </header>

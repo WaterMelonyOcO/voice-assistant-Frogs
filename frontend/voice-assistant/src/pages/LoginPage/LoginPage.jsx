@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import './style.css';
 import prof from '../../images/profilw.png';
 import { useTranslation } from "react-i18next"; 
+import { Helmet } from 'react-helmet';
 
 export default function LoginPage() {
 
@@ -9,10 +10,15 @@ export default function LoginPage() {
     const changeLanguage = (language) => {
       i18n.changeLanguage(language);
     };
-    return(
+    return(<>
+    <Helmet>
+        <title>{t("title1")}</title>
+      </Helmet>
+    
+
 
         
-        //action="" method='post'
+        {/*action="" method='post'*/}
         <form className="form">
             <span className='form-wrapper'>
                 <label for="login" className='form-label'>{t("form-label1")}</label>
@@ -34,5 +40,5 @@ export default function LoginPage() {
             
             
         </form>
-    )
+    </>)
 }

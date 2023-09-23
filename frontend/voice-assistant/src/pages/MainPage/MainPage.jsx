@@ -7,6 +7,7 @@ import VoiseAssistant from '../../components/VoiseAssistant/VoiseAssistant'
 import { useImageToggle } from "../../components/ImageToggleContext/ImageToggleContext";
 
 import { useTranslation } from "react-i18next";
+import { Helmet } from 'react-helmet';
 
 export default function MainPage() {
 
@@ -19,6 +20,10 @@ export default function MainPage() {
   };
 
     return(<>
+
+<Helmet>
+        <title>{t("title3")}</title>
+      </Helmet>
             <div className="body-layout_leftside">
                 <h2 className="main_header">
                 {t("header1")}

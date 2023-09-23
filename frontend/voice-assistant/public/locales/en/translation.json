@@ -1,5 +1,8 @@
 {
     "city": "Krasnodar",
+    "btn1" : "Language change",
+    "btn2": "Button for editing a page with special features",
+    "btn3": "Voice Assistant Opening button",
     "lang": "Russian",
     "one_btn" : "Special features",
     "two_btn" : "Voice Assistant",
@@ -53,5 +56,13 @@
     "header9": "Confirmation of the action",
     "confirm_p": "Are you sure you want to pay for the purchase?",
     "confirm_action1":"Cancel",
-    "confirm_action2":"Yes, pay"
+    "confirm_action2":"Yes, pay",
+    "title1": "Login to account page",
+    "title2": "Order registration page",
+    "title3": "Main page",
+    "title4": "Appliances page",
+    "title5": "Smartphones and photo equipment page",
+    "title6": "Pcs, laptops, peripherals page",
+    "title7": "Favorites page",
+    "title8": "Cart page"
 }

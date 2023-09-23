@@ -3,6 +3,7 @@ import cartIcon from '../../images/cart.png';
 import { useState } from 'react';
 import ModalConfirm from '../../components/ModalConfirm/ModalConfirm';
 import { useTranslation } from "react-i18next";
+import { Helmet } from 'react-helmet';
 
 export default function OrderRegistration() {
     const [modalActive, setModalActive] = useState(!true);
@@ -12,6 +13,10 @@ export default function OrderRegistration() {
       i18n.changeLanguage(language);
     };
     return (<>
+
+<Helmet>
+        <title>{t("title2")}</title>
+      </Helmet>
             <div className="body-layout_leftside">
                 <h2 className="main_header">
                     {t("header5")}

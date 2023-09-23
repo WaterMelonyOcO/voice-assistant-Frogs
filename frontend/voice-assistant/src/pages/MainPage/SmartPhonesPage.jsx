@@ -2,7 +2,7 @@ import ProductCard from "../../components/ProductCard/ProductCard";
 import "./style.css";
 import { useTranslation } from "react-i18next";
 import smartphone from '../../constants/smartphones.json';
-
+import { Helmet } from 'react-helmet';
 
 export default function SmartPhonePage() {
 
@@ -13,6 +13,10 @@ export default function SmartPhonePage() {
     };
     let mainData = Object.values(smartphone)[0];
     return(<>
+
+<Helmet>
+        <title>{t("title5")}</title>
+      </Helmet>
             <div className="body-layout_leftside">
                 <h2 className="main_header">
                     {t("header3")}
