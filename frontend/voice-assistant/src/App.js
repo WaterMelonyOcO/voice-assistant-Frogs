@@ -4,6 +4,9 @@ import MainPage from './pages/MainPage/MainPage';
 import AppliancesPage from './pages/MainPage/AppliancesPage';
 import ComputersPage from './pages/MainPage/ComputersPage';
 import SmartPhonesPage from './pages/MainPage/SmartPhonesPage';
+import LoginPage from './pages/LoginPage/LoginPage';
+import OrderRegistration from './pages/OrderRegistration/OrderRegistration';
+import FavouritesPage from './pages/FavouritesPage/FavouritesPage';
 
 function App() {
   return (
@@ -13,6 +16,10 @@ function App() {
         <Route path='/appliances' element={<AppliancesPage/>} />
         <Route path='/smartphone' element={<SmartPhonesPage/>}/>
         <Route path='/computers'element={<ComputersPage/>}/>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/main" element={<MainPage/>} />
+        <Route path='cart/order' element={<OrderRegistration />} />
+        <Route path="/favourites" element={<FavouritesPage />} />
       </Routes>
     </BrowserRouter>
 
