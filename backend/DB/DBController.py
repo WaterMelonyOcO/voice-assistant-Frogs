@@ -1,42 +1,51 @@
 from Models.ProductModel import Product, ProductRequirement
+from Models.types import *
 from peewee import SqliteDatabase
 
 db = SqliteDatabase("./product.db")
 
-def DBConn(func):
-    def inner(*args, **kwargs):
-        db.connect()
-        data = func(*args, **kwargs)
-        db.close()
-        return data
-    return inner
-
 
 class DBController:
 
-    @DBConn
+    def __init__(self) -> None:
+        Product._meta.database = db
+        ProductRequirement._meta.database = db
+
+
     def GetProductViaName(self, ProductName: str):
 
         ProductName = ProductName.capitalize()
-        query = Product.select().where( Product.name.contains(ProductName) )
-        return [i.name for i in query]
+        query = (Product.select()
+                # .join(Product)
+                .where( Product.name.contains(ProductName) ))
+        return [i.__data__ for i in query]
 
-    @DBConn
-    def GetProductViaFilters(self, ProductFilters: dict):
-        
-        data = Product.select().join(ProductRequirement).where( 
-            *ProductRequirement._meta.fields.keys() in ProductFilters
-         )
-        print(data)
-    
-    @DBConn
-    def GetProductViaCategory(self, Productcategory):
-        pass
    
-    @DBConn
+    def GetProductViaFilters(self, Productfilters: dict):
+        
+        query = ProductRequirement.select()
+
+        for key, value in Productfilters.items():
+            if hasattr(ProductRequirement, key):
+                query = query.where(getattr(ProductRequirement, key, None) == value)
+
+        return [i.__data__ for i in query ]
+    
+    def GetProductViaCategory(self, Productcategory: str):
+        query = Product.select()
+
+        var = query.where(
+            Product.category == Productcategory
+        )
+
+        return [i.__data__ for i in var ]
+
+   
     def GetProductRequirements(self, ProductID):
-        pass
+        query = ProductRequirement.select()
 
+        result = query.where(
+            ProductRequirement.ProductId == ProductID
+        )
 
-test = DBController()
-test.GetProductViaFilters({"priceBeforeDiscount": 777})
+        return [i.__data__ for i in result ]
