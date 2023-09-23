@@ -10,17 +10,25 @@ export default function SpecialFeaturesModal({active, setActive}) {
     const [activeBtnAcc, setActiveBtnAcc] = useState(false);
 
     /* for contrast */
-    const [contrast, setContrast] = useState(false);
-    useEffect(() => {
-        if (contrast) {
-          document.body.classList.add('high-contrast');
-        } else {
-          document.body.classList.remove('high-contrast');
-        }
-      }, [contrast]);
-      const handleContrastToggle = () => {
-        setContrast(!contrast);
-      };
+    // const [contrast, setContrast] = useState(false);
+    // useEffect(() => {
+    //     if (contrast) {
+    //       document.body.classList.add('high-contrast');
+    //     } else {
+    //       document.body.classList.remove('high-contrast');
+    //     }
+    //   }, [contrast]);
+    //   const handleContrastToggle = () => {
+    //     setContrast(!contrast);
+    //   };
+
+    /* for contrast 2 */
+    const [isContrast, setIsContrast] = useState(false);
+
+  const handleContrastToggle = () => {
+    setIsContrast(!isContrast);
+    localStorage.setItem('contrast', JSON.stringify(!isContrast));
+  };
     return(
         <div className={active ? "modal active" : "modal"}>
             <div className="modal_content" onClick={e => e.stopPropagation()}>
@@ -96,9 +104,15 @@ export default function SpecialFeaturesModal({active, setActive}) {
                             Стандартный
                             </button>
 
-                            <button className={active ? "wraper-btn active" : "wraper-btn no_active"} onClick={handleContrastToggle}>
+                            {/* <button className={active ? "wraper-btn active" : "wraper-btn no_active"} onClick={handleContrastToggle}>
                             Контрастный
-                            </button>
+                            </button> */}
+                            <button
+  className={isContrast ? "wraper-btn active" : "wraper-btn no_active"}
+  onClick={handleContrastToggle}
+>
+  Контрастный
+</button>
                        </span>
                     </span>
 

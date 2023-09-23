@@ -28,7 +28,7 @@ export default function Header() {
             <span>8-800-77-07-999 (с 03:00 до 22:00)</span>
         </div>
 
-    <header className='header'>
+    <header className='header' role="contentinfo">
 
         <span className='header-one_block'>
         <Link to='/main'><img src={logo} alt="нажмите сюда для перехода на главную страницу" title="Нажмите сюда для перехода на главную страницу"/></Link>

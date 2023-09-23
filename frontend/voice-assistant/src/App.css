@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: var(--base-font-size);
   font-family: sans-serif;
   max-width: 100vw;
 
@@ -10,4 +11,10 @@
 
 body {
   background-color: #F2F2F2;
+}
+
+:root {
+  --base-font-size: 16px;
+  --one-font-size: 20px;
+  --two-font-size: 24px;
 }

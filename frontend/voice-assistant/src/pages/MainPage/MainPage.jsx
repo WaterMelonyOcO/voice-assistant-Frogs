@@ -11,10 +11,10 @@ import line from '../../images/line.png';
 export default function MainPage() {
     let mainData = Object.values(dataMainPage)[0];
     return(<>
-        <Header />
+        {/* <Header /> */}
 
-        <div className="body-layout">
-            <Catalog />
+        {/* <div className="body-layout"> */}
+            {/* <Catalog /> */}
             <div className="body-layout_leftside">
                 <h2 className="main_header">
                     Актуальные предложения
@@ -35,7 +35,7 @@ export default function MainPage() {
                     ))}
                 </div>
             </div>
-        </div>
+        {/* </div> */}
         
             
         

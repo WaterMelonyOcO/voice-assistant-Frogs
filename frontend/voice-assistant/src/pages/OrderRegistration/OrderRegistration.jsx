@@ -1,6 +1,4 @@
 import './style.css';
-import Header from '../../components/Header/Header';
-import Catalog from '../../components/Catalog/Catalog';
 import cartIcon from '../../images/cart.png';
 import { useState } from 'react';
 import ModalConfirm from '../../components/ModalConfirm/ModalConfirm';
@@ -8,11 +6,6 @@ import ModalConfirm from '../../components/ModalConfirm/ModalConfirm';
 export default function OrderRegistration() {
     const [modalActive, setModalActive] = useState(!true);
     return (<>
-        <Header />
-
-        <div className="body-layout">
-            <Catalog />
-
             <div className="body-layout_leftside">
                 <h2 className="main_header">
                     Оформление заказа
@@ -77,8 +70,7 @@ export default function OrderRegistration() {
                 </form>
                 
             </div>
-            
-        </div>
+
         <ModalConfirm active={modalActive} setActive={setModalActive}/>
         </>)
 }
