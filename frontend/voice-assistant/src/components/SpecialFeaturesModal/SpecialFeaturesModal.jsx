@@ -5,7 +5,7 @@ import BtnOutlined from '../BtnOutlined/BtnOutlined';
 import BtnFilled from '../BtnFilled/BtnFilled';
 import { useState } from 'react';
 import { useEffect } from 'react';
-
+import { useImageToggle } from '../ImageToggleContext/ImageToggleContext';
 
 export default function SpecialFeaturesModal({active, setActive}) {
     const [activeBtnAcc, setActiveBtnAcc] = useState(false);
@@ -101,6 +101,10 @@ const deleteContrast = () => {
 
 /* кнопка отключения картинок */
 
+    const { toggleImages } = useImageToggle();
+
+    const { resetImages } = useImageToggle();
+
 
     return(
         <div className={active ? "modal active" : "modal"}>
@@ -187,11 +191,11 @@ const deleteContrast = () => {
                         Изображения
                         </h4>
                         <span className='wrapper'>
-                            <button className="wraper-btn">
+                            <button className="wraper-btn" onClick={resetImages}>
                             Цветные
                             </button>
 
-                            <button className="wraper-btn" >
+                            <button className="wraper-btn" onClick={toggleImages}>
                             Отключить
                             </button>
                        </span>

@@ -17,6 +17,7 @@ import placeIcon from './images/place.svg';
 import worldIcon from './images/world.png';
 import pepIcon from './images/pep.png';
 import saverIcon from './images/saver.png';
+import { ImageToggleProvider } from './components/ImageToggleContext/ImageToggleContext';
 
 // import styled from "styled-components";
 
@@ -56,6 +57,7 @@ function App() {
 
   const [modalActive, setModalActive] = useState(!true);
   return (
+    <ImageToggleProvider>
     <BrowserRouter>
     {/* <div style={{ fontSize: `${fontSize}px` }}> */}
 
@@ -105,6 +107,7 @@ function App() {
       <SpecialFeaturesModal active={modalActive} setActive={setModalActive} />
       {/* </div> */}
     </BrowserRouter>
+    </ImageToggleProvider>
 
   );
 }
