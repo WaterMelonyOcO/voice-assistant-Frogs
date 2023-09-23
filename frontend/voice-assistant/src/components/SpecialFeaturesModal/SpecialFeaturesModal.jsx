@@ -6,8 +6,15 @@ import BtnFilled from '../BtnFilled/BtnFilled';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { useImageToggle } from '../ImageToggleContext/ImageToggleContext';
+import { useTranslation } from "react-i18next";
 
 export default function SpecialFeaturesModal({active, setActive}) {
+
+    const { t, i18n } = useTranslation();
+    const changeLanguage = (language) => {
+      i18n.changeLanguage(language);
+    };
+
     const [activeBtnAcc, setActiveBtnAcc] = useState(false);
 
     const [activeBtn1, setActiveBtn1] = useState(false);
@@ -98,7 +105,7 @@ const deleteContrast = () => {
         <div className={active ? "modal active" : "modal"}>
             <div className="modal_content" onClick={e => e.stopPropagation()}>
             <div className='modal_header'>
-                <h2>Специальные возможности</h2>
+                <h2>{t("header8")}</h2>
                     <button onClick={() => setActive(false)} className='header-close_btn'> 
                         <img src={closeIcon} alt=""/>
                     </button>
@@ -106,7 +113,7 @@ const deleteContrast = () => {
 
                     <div className='modal_body'>
                         <p className='body-p'>
-                        Данные настройки помогут Вам изменить сайт так, как Вам будет удобно.
+                        {t("special_p")}
                         </p>
 
                     {/* <span className='body-buttons_wraper'>
@@ -126,7 +133,7 @@ const deleteContrast = () => {
 
                     <span className='body-buttons_wraper'>
                         <h4 className='wraper-h4'>
-                        Размер шрифта
+                        {t("special_header1")}
                         </h4>
                         <span className='wrapper'>
                         <button className={ activeBtn1 ? "wraper-btn active" : "wraper-btn no_active"} onClick={getBtnSize}>
@@ -144,47 +151,47 @@ const deleteContrast = () => {
 
                     <span className='body-buttons_wraper'>
                         <h4 className='wraper-h4'>
-                        Расстояние между буквами
+                        {t("special_header2")}
                         </h4>
                         <span className='wrapper'>
                             <button className={ activeBtn4 ? "wraper-btn active" : "wraper-btn no_active"} onClick={deleteLetterSpacing}>
-                            Рекомендуемое
+                            {t("special_desc1")}
                             </button>
 
                             <button className={ activeBtn5 ? "wraper-btn active" : "wraper-btn no_active"} onClick={increaseLetterSpacing}>
-                            Большое
+                            {t("special_desc2")}
                             </button>
                             <button className={ activeBtn6 ? "wraper-btn active" : "wraper-btn no_active"} onClick={increaseLetterSpacing2}>
-                            Очень большое
+                            {t("special_desc3")}
                             </button>
                         </span>
                     </span>
 
                     <span className='body-buttons_wraper'>
                         <h4 className='wraper-h4'>
-                        Цвет шрифта и фона
+                        {t("special_header3")}
                         </h4>
                         <span className='wrapper'>
                             <button className={ activeBtn7 ? "wraper-btn active" : "wraper-btn no_active"} onClick={deleteContrast}>
-                            Стандартный
+                            {t("special_desc4")}
                             </button>
                             <button className={ activeBtn8 ? "wraper-btn active" : "wraper-btn no_active"} onClick={increaseContrast}>
-                            Контрастный
+                            {t("special_desc5")}
                             </button>
                        </span>
                     </span>
 
                     <span className='body-buttons_wraper'>
                         <h4 className='wraper-h4'>
-                        Изображения
+                        {t("special_header4")}
                         </h4>
                         <span className='wrapper'>
                             <button className={ activeBtn9 ? "wraper-btn active" : "wraper-btn no_active"} onClick={() => { resetImages(); setActiveBtn9(true); setActiveBtn10(false); }}>
-                            Цветные
+                            {t("special_desc6")}
                             </button>
 
                             <button className={ activeBtn10 ? "wraper-btn active" : "wraper-btn no_active"} onClick={() => { toggleImages(); setActiveBtn9(false); setActiveBtn10(true); }}>
-                            Отключить
+                            {t("special_desc7")}
                             </button>
                        </span>
                     </span>
