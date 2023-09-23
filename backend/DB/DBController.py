@@ -1,10 +1,12 @@
-from backend.DB.ProductModel import Product
+from Models.ProductModel import Product, ProductRequirement
 
 class DBController:
 
-    def __init__(self) -> None:
-        # self.dbFile = databaseFile
-        # self.dbFileConnection = SqliteDatabase(self.dbFile)
-        # self.dbCursore = self.dbFileConnection.cursor()
+    def GetProductViaName(self, ProductName: str):
+        pass
+
+    def GetProductViaFilters(self, ProductFilters):
         pass
     
+    def GetProductViaCategory(self, Productcategory):
+        pass
