@@ -7,6 +7,7 @@ import SmartPhonesPage from './pages/MainPage/SmartPhonesPage';
 import LoginPage from './pages/LoginPage/LoginPage';
 import OrderRegistration from './pages/OrderRegistration/OrderRegistration';
 import FavouritesPage from './pages/FavouritesPage/FavouritesPage';
+import CartPage from './pages/CartPage/CartPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/main" element={<MainPage/>} />
         <Route path='cart/order' element={<OrderRegistration />} />
         <Route path="/favourites" element={<FavouritesPage />} />
+        <Route path='/cart' element={<CartPage />} />
       </Routes>
     </BrowserRouter>
 
