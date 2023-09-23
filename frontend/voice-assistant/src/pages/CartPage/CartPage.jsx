@@ -3,6 +3,7 @@ import Catalog from "../../components/Catalog/Catalog";
 import './style.css';
 import BtnFilled from "../../components/BtnFilled/BtnFilled";
 import cartIconWh from '../../images/cart_white.svg';
+import { Link } from "react-router-dom";
 
 export default function CartPage() {
     return (<>
@@ -37,7 +38,7 @@ export default function CartPage() {
                         </h4>
                     </span>
 
-                    <BtnFilled name_of_btn={"Перейти к оформлению"} icon_for_btn={cartIconWh}/>
+                    <Link to="/cart/order"><BtnFilled name_of_btn={"Перейти к оформлению"} icon_for_btn={cartIconWh}/></Link>
             </div>
         </div> 
     </div>

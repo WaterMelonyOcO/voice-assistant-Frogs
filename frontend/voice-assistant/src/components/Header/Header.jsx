@@ -11,6 +11,7 @@ import InputSearch from '../InputSearch/InputSearch';
 import { Link } from "react-router-dom";
 import SpecialFeaturesModal from "../SpecialFeaturesModal/SpecialFeaturesModal";
 import { useState } from "react";
+
 export default function Header() {
     const [modalActive, setModalActive] = useState(!true);
     return ( <>
