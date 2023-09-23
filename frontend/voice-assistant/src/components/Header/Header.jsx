@@ -9,16 +9,14 @@ import carttIcon from '../../images/cart.png';
 import profileIcon from '../../images/profilw.png';
 import InputSearch from '../InputSearch/InputSearch';
 import { Link } from "react-router-dom";
-import SpecialFeaturesModal from "../SpecialFeaturesModal/SpecialFeaturesModal";
-import VoiseAssistant from '../VoiseAssistant/VoiseAssistant';
-import React, { useState } from "react";
 
+import { useState } from "react";
 export default function Header() {
     const [modalActive, setModalActive] = useState(!true);
-    return ( 
-        <>
-
-    <header className='header' role="contentinfo">
+   
+    return ( <>
+      
+    <header className='header'>
 
         <span className='header-one_block'>
         <Link to='/main'><img src={logo} alt="нажмите сюда для перехода на главную страницу" title="Нажмите сюда для перехода на главную страницу"/></Link>
@@ -45,7 +43,7 @@ export default function Header() {
                 </Link>
         </nav>
     </header>
-    {/* <SpecialFeaturesModal active={modalActive} setActive={setModalActive}/> */}
-<VoiseAssistant active={modalVoiceAssistantActive} setActive={setModalVoiceAssistantActive}/>
+    
+
     </>)
 }
