@@ -18,6 +18,7 @@ import worldIcon from './images/world.png';
 import pepIcon from './images/pep.png';
 import saverIcon from './images/saver.png';
 import VoiseAssistant from './components/VoiseAssistant/VoiseAssistant';
+import Product from './pages/Pages/Product';
 
 
 function App() {
@@ -61,14 +62,17 @@ function App() {
         <div className="main-content">
             <Routes>
               <Route path="/main" element={<MainPage />} />
-              <Route path="/product/:productId" element={<ProductPage />} />
+              <Route path="/product/:productId" element={<Product />} />
               <Route path="/appliances" element={<AppliancesPage />} />
               <Route path="/smartphone" element={<SmartPhonesPage />} />
               <Route path="/computers" element={<ComputersPage />} />
               <Route path="cart/order" element={<OrderRegistration />} />
               <Route path="/favourites" element={<FavouritesPage />} />
               <Route path="/cart" element={<CartPage />} />
+             
             </Routes>
+          
+
           </div>
           </div>
       </div>    

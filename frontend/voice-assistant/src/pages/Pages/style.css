@@ -1,7 +1,6 @@
 .body-layout {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: flex-start;
 }
 
@@ -52,4 +51,12 @@
     row-gap: 30px;
     justify-content: flex-end;
     margin: 50px 0 50px;
+}
+
+
+.white-space {
+    background-color: #fff; /* Белый цвет фона */
+    height: 100vh; /* Занимаем всю высоту видимой области */
+    width: 100%; /* Занимаем всю доступную ширину */
+    margin-top: 60px; /* Отступ сверху, чтобы не перекрывать header */
 }
