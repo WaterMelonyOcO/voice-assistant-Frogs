@@ -1,13 +1,7 @@
 import './style.css';
-import Header from '../../components/Header/Header';
-import Catalog from '../../components/Catalog/Catalog';
 
 export default function FavouritesPage() {
     return (<>
-        <Header />
-
-<div className="body-layout">
-    <Catalog />
     <div className="body-layout_leftside">
         <h2 className="main_header">
             Избранное
@@ -19,7 +13,6 @@ export default function FavouritesPage() {
             ))} */}
         </div> 
     </div>
-</div>
     </>
 
     )
