@@ -1,19 +1,11 @@
 from peewee import *
 
-db = SqliteDatabase("./product.db")
+db = SqliteDatabase("product.db")
 
 
 class BaseModel(Model):
     class Meta:
         database = db
-
-class JSONField(TextField):
-    def db_value(self, value):
-        return json.dumps(value)
-
-    def python_value(self, value):
-        if value is not None:
-            return json.loads(value)
 
 class Product(BaseModel):
     productID = PrimaryKeyField(unique=True)
@@ -23,6 +15,9 @@ class Product(BaseModel):
     priceBeforeDiscount = IntegerField()
     priceWithDiscount = IntegerField()
     description = TextField(null=True)
+
+    # class Meta:
+    #     db_table="product"
 
 class ProductRequirement(BaseModel):
 
@@ -49,17 +44,23 @@ class ProductRequirement(BaseModel):
     Storage = IntegerField(null=True)
     Camera = CharField(null=True)
 
+    class Meta:
+        db_table="productRequirement"
+
 
 if __name__ == "__main__":
-    import json
-    from os.path import abspath
-    from DBFillingEndpoint import fillingDB
 
-    db.create_tables([Product, ProductRequirement])
+    test = Product.select().get()
+    print(test)
+    # import json
+    # from os.path import abspath
+    # # from DBFillingEndpoint import fillingDB
 
-    f = open('./test.json')
-    jsonData = json.load(f)
+    # # db.create_tables([Product, ProductRequirement])
 
-    fillingDB(jsonData['all'], Product, ProductRequirement)
+    # # f = open('./test.json')
+    # # jsonData = json.load(f)
+
+    # # fillingDB(jsonData['all'], Product, ProductRequirement)
 
 # exclude=['DoesNotExist', '__module__', '__doc__', "__data__", "__rel__", "_meta", "_schema", "__repr__"]
