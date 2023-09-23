@@ -16,12 +16,14 @@ export default function LoginPage() {
                 <input type="password" name="password" maxlength="8" id="password" placeholder='Введите пароль' className='form-input'/>
         </span>
 
-        <Link to="/main">
+        
             <span className='btn_with_icon'>
+            <Link to="/main">
                 <input type='submit' value="Войти" name="submit" className='form-btn'/>
                 <img src={prof} alt="" className='icon'/>
+                </Link>
             </span>
-            </Link>
+            
             
         </form>
     )
