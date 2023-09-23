@@ -1,5 +1,3 @@
-import Header from "../../components/Header/Header";
-import Catalog from "../../components/Catalog/Catalog";
 import './style.css';
 import BtnFilled from "../../components/BtnFilled/BtnFilled";
 import cartIconWh from '../../images/cart_white.svg';
@@ -7,10 +5,6 @@ import { Link } from "react-router-dom";
 
 export default function CartPage() {
     return (<>
-        <Header />
-
-<div className="body-layout">
-    <Catalog />
     <div className="body-layout_leftside">
         <h2 className="main_header">
             Корзина
@@ -38,10 +32,9 @@ export default function CartPage() {
                         </h4>
                     </span>
 
-                    <Link to="/cart/order"><BtnFilled name_of_btn={"Перейти к оформлению"} icon_for_btn={cartIconWh}/></Link>
+                    <Link to="/cart/order" className='link-btn'><BtnFilled name_of_btn={"Перейти к оформлению"} icon_for_btn={cartIconWh}/></Link>
             </div>
         </div> 
     </div>
-</div>
     </>)
 }
