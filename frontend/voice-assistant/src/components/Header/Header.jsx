@@ -1,8 +1,4 @@
 import "./style.css";
-import placeIcon from '../../images/place.svg';
-import worldIcon from '../../images/world.png';
-import pepIcon from '../../images/pep.png';
-import saverIcon from '../../images/saver.png';
 import logo from '../../images/logo.svg';
 import heartIcon from '../../images/heart.png';
 import carttIcon from '../../images/cart.png';

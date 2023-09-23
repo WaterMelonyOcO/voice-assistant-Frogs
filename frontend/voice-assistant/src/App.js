@@ -19,47 +19,12 @@ import pepIcon from './images/pep.png';
 import saverIcon from './images/saver.png';
 import { ImageToggleProvider } from './components/ImageToggleContext/ImageToggleContext';
 
-// import styled from "styled-components";
-
-//    const StyledText = styled.p`
-//      color: red;
-//      /* другие стили для текста */
-//    `;
 function App() {
-
-  // useEffect(() => {
-  //   const allTextElements = document.querySelectorAll('p, span, h1, h2, h3, h4, h5, h6, li, td, a');
-  //   allTextElements.forEach((element) => {
-  //     element.style.color = 'red';
-  //     element.style.fontSize = '30px'; // Здесь меняем размер шрифта на 20px
-  //   });
-  // }, []);
-
-  // const [textHighlighted, setTextHighlighted] = useState(false);
-
-  // const handleButtonClicked = () => {
-  //   if (!textHighlighted) {
-  //     const allTextElements = document.querySelectorAll('p, span, h1, h2, h3, h4, h5, h6, li, td, a');
-  //     allTextElements.forEach(element => {
-  //       element.style.setProperty('--base-font-size', '20px'); // Здесь меняем размер шрифта на 20px
-  //     });
-  //   } else {
-  //     const allTextElements = document.querySelectorAll('p, span, h1, h2, h3, h4, h5, h6, li, td, a');
-  //     allTextElements.forEach(element => {
-  //       element.style.color = 'inherit';
-  //       element.style.removeProperty('--base-font-size');
-  //     });
-  //   }
-
-  //   setTextHighlighted(prevState => !prevState);
-  // };
-
 
   const [modalActive, setModalActive] = useState(!true);
   return (
     <ImageToggleProvider>
     <BrowserRouter>
-    {/* <div style={{ fontSize: `${fontSize}px` }}> */}
 
     <div style={{ overflowX: 'hidden', overflowY: 'hidden' }}>
     <Routes>
@@ -69,9 +34,6 @@ function App() {
     
 
     <div className="app-container">
-    {/* <button onClick={handleButtonClicked}>
-        {textHighlighted ? 'Убрать выделение' : 'Выделить текст'} 
-      </button> */}
 
     <div className="firstLine">
             <span className='place'><img src={placeIcon} alt="иконка места"></img> <p>Краснодар</p></span>
@@ -105,7 +67,6 @@ function App() {
       </div>
 
       <SpecialFeaturesModal active={modalActive} setActive={setModalActive} />
-      {/* </div> */}
     </BrowserRouter>
     </ImageToggleProvider>
 
