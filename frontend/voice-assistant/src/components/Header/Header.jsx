@@ -9,13 +9,16 @@ import carttIcon from '../../images/cart.png';
 import profileIcon from '../../images/profilw.png';
 import InputSearch from '../InputSearch/InputSearch';
 import { Link } from "react-router-dom";
+import SpecialFeaturesModal from "../SpecialFeaturesModal/SpecialFeaturesModal";
+import { useState } from "react";
 export default function Header() {
+    const [modalActive, setModalActive] = useState(true);
     return ( <>
         <div className="firstLine">
             <span className='place'><img src={placeIcon} alt="иконка места"></img> <p>Краснодар</p></span>
         <span className='btn-layout'>
             <button className='btn_header btn-lang'><img src={worldIcon} alt="смена языка"/> Русский</button>
-            <button className='btn_header btn-acc'><img src={pepIcon} alt="спец.возможности"/> Спец.возможности</button>
+            <button className='btn_header btn-acc' onClick={() => setModalActive(true)}><img src={pepIcon} alt="спец.возможности"/> Спец.возможности</button>
             <button className='btn_header btn-help'><img src={saverIcon} alt="голосовой помощник"/>Голосовой помощник</button>
         </span>
 
@@ -45,5 +48,6 @@ export default function Header() {
                 Войти</button>
         </nav>
     </header>
+    <SpecialFeaturesModal active={modalActive} setActive={setModalActive}/>
     </>)
 }
