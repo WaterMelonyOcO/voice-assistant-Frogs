@@ -9,7 +9,16 @@ import SpecialFeaturesModal from "../SpecialFeaturesModal/SpecialFeaturesModal";
 import VoiseAssistant from '../VoiseAssistant/VoiseAssistant';
 import React, { useState } from "react";
 
+import { useTranslation } from "react-i18next";
+
 export default function Header() {
+
+    const { t, i18n } = useTranslation();
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+
     const [modalActive, setModalActive] = useState(!true);
     return ( 
         <>
@@ -17,7 +26,7 @@ export default function Header() {
     <header className='header' role="contentinfo">
 
         <span className='header-one_block'>
-        <Link to='/main'><img src={logo} alt="нажмите сюда для перехода на главную страницу" title="Нажмите сюда для перехода на главную страницу"/></Link>
+        <Link to='/main'><img src={logo} alt={t("alt_logo")} title={t("alt_logo")}/></Link>
 
             <InputSearch />
            
@@ -26,18 +35,18 @@ export default function Header() {
         <nav className='header__nav'>
             <Link to="/favourites" className="nav-link">
                 <button className='btn_header btn-nav1'>
-                <img src={heartIcon} alt="перейти в избранное"/>
-                    Избранное</button>
+                <img src={heartIcon} alt={t("alt_heart")}/>
+                {t("heart")}</button>
             </Link>
             <Link to="/cart" className="nav-link">
                 <button className='btn_header btn-nav1'>
-                <img src={carttIcon} alt="перейти в корзину"/>
-                    Корзина</button>
+                <img src={carttIcon} alt={t("alt_cart")}/>
+                {t("cart")}</button>
             </Link>
             <Link to="/" className="nav-link">
                 <button className='btn_header btn-nav1'>
-                <img src={profileIcon} alt="перейти в профиль"/>
-                Войти</button>
+                <img src={profileIcon} alt={t("alt_profile")}/>
+                {t("profile")}</button>
                 </Link>
         </nav>
     </header>

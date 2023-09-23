@@ -18,8 +18,15 @@ import worldIcon from './images/world.png';
 import pepIcon from './images/pep.png';
 import saverIcon from './images/saver.png';
 import { ImageToggleProvider } from './components/ImageToggleContext/ImageToggleContext';
+import { useTranslation } from "react-i18next";
 
 function App() {
+
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
 
   const [modalActive, setModalActive] = useState(!true);
   return (
@@ -36,16 +43,16 @@ function App() {
     <div className="app-container">
 
     <div className="firstLine">
-            <span className='place'><img src={placeIcon} alt="иконка места"></img> <p>Краснодар</p></span>
+            <span className='place'><img src={placeIcon} alt="иконка места"></img> <p>{t("city")}</p></span>
         <span className='btn-layout'>
 
-            <button className='btn_header btn-lang' title="Cмена языка"><img src={worldIcon} alt="смена языка"/> Русский</button>
-            <button className='btn_header btn-acc' onClick={() => setModalActive(true)} title="Кнопка редактирования страницы со спец. возможностями"><img src={pepIcon} alt="спец.возможности"/> Спец.возможности</button>
-            <button className='btn_header btn-help' title="Кнопка открытия голосового помощника"><img src={saverIcon} alt="голосовой помощник"/>Голосовой помощник</button>
+            <button className='btn_header btn-lang' title="Cмена языка" onClick={() => changeLanguage("en")}><img src={worldIcon} alt="смена языка"/> {t("lang")}</button>
+            <button className='btn_header btn-acc' onClick={() => setModalActive(true)} title="Кнопка редактирования страницы со спец. возможностями"><img src={pepIcon} alt="спец.возможности"/> {t("one_btn")}</button>
+            <button className='btn_header btn-help' title="Кнопка открытия голосового помощника"><img src={saverIcon} alt="голосовой помощник"/>{t("two_btn")}</button>
 
         </span>
 
-            <span>8-800-77-07-999 (с 03:00 до 22:00)</span>
+            <span>8-800-77-07-999 ({t("time")})</span>
         </div>
         <Header />
 

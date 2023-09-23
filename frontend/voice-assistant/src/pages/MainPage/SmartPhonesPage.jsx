@@ -1,16 +1,21 @@
 import ProductCard from "../../components/ProductCard/ProductCard";
 import "./style.css";
-
+import { useTranslation } from "react-i18next";
 import smartphone from '../../constants/smartphones.json';
-import line from '../../images/line.png';
 
 
 export default function SmartPhonePage() {
+
+
+    const { t, i18n } = useTranslation();
+    const changeLanguage = (language) => {
+      i18n.changeLanguage(language);
+    };
     let mainData = Object.values(smartphone)[0];
     return(<>
             <div className="body-layout_leftside">
                 <h2 className="main_header">
-                    Пк, ноутбуки, переферия
+                    {t("header3")}
                 </h2>
                 <div className="cards-layout">
                         { mainData.map((product) => (
