@@ -46,6 +46,6 @@ export default function Header() {
         </nav>
     </header>
     {/* <SpecialFeaturesModal active={modalActive} setActive={setModalActive}/> */}
-<VoiseAssistant active={modalVoiceAssistantActive} setActive={setModalVoiceAssistantActive}/>
+{/* <VoiseAssistant active={modalVoiceAssistantActive} setActive={setModalVoiceAssistantActive}/> */}
     </>)
 }

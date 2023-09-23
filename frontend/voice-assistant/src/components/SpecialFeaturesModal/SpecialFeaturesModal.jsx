@@ -72,7 +72,10 @@ const handleButtonClicked1 = () => {
   setTextHighlighted1(prevState => !prevState);
 };
 
-
+/* кнопка расстояния между буквами 0*/
+const deleteLetterSpacing = () => {
+    document.documentElement.style.setProperty('--letter-spacing', 'normal');
+  };
 
   /* кнопка расстояния между буквами 1*/
   const increaseLetterSpacing = () => {
@@ -152,7 +155,7 @@ const deleteContrast = () => {
                         Расстояние между буквами
                         </h4>
                         <span className='wrapper'>
-                            <button className="wraper-btn">
+                            <button className="wraper-btn" onClick={deleteLetterSpacing}>
                             Рекомендуемое
                             </button>
 

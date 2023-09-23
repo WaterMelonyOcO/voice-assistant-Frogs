@@ -93,6 +93,10 @@
     opacity: 0.8;
     cursor: pointer;
 }
+.wraper-btn:hover {
+    background-color: #a9a6a6;
+    cursor: pointer;
+}
 
 .wordspacing1 {
     letter-spacing: 0.4px;
@@ -102,7 +106,3 @@
     letter-spacing: 0.7px;
 }
 
-/*******************/
-.high-contrast {
-    filter: grayscale(100%);
-  }
