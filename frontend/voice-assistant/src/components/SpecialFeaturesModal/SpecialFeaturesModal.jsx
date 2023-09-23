@@ -9,26 +9,90 @@ import { useEffect } from 'react';
 export default function SpecialFeaturesModal({active, setActive}) {
     const [activeBtnAcc, setActiveBtnAcc] = useState(false);
 
-    /* for contrast */
-    // const [contrast, setContrast] = useState(false);
-    // useEffect(() => {
-    //     if (contrast) {
-    //       document.body.classList.add('high-contrast');
-    //     } else {
-    //       document.body.classList.remove('high-contrast');
-    //     }
-    //   }, [contrast]);
-    //   const handleContrastToggle = () => {
-    //     setContrast(!contrast);
-    //   };
+    /* кнопка шрифта на 100% */
+    const [textHighlighted0, setTextHighlighted0] = useState(false);
 
-    /* for contrast 2 */
-    const [isContrast, setIsContrast] = useState(false);
+    const handleButtonClicked0 = () => {
+      if (!textHighlighted) {
+        const allTextElements = document.querySelectorAll('p, span, h1, h2, h3, h4, h5, h6, li, td, a');
+        allTextElements.forEach(element => {
+          element.style.setProperty('--base-font-size', '16px'); // Здесь меняем размер шрифта на 16px
+        });
+      } else {
+        const allTextElements = document.querySelectorAll('p, span, h1, h2, h3, h4, h5, h6, li, td, a');
+        allTextElements.forEach(element => {
+          element.style.color = 'inherit';
+          element.style.removeProperty('--base-font-size');
+        });
+      }
+  
+      setTextHighlighted0(prevState => !prevState);
+    };
+    /* конец кнопки */
 
-  const handleContrastToggle = () => {
-    setIsContrast(!isContrast);
-    localStorage.setItem('contrast', JSON.stringify(!isContrast));
+   /* кнопка увеличения шрифта на 150% */
+const [textHighlighted, setTextHighlighted] = useState(false);
+
+  const handleButtonClicked = () => {
+    if (!textHighlighted) {
+      const allTextElements = document.querySelectorAll('p, span, h1, h2, h3, h4, h5, h6, li, td, a');
+      allTextElements.forEach(element => {
+        element.style.setProperty('--base-font-size', '20px'); // Здесь меняем размер шрифта на 20px
+      });
+    } else {
+      const allTextElements = document.querySelectorAll('p, span, h1, h2, h3, h4, h5, h6, li, td, a');
+      allTextElements.forEach(element => {
+        element.style.color = 'inherit';
+        element.style.removeProperty('--base-font-size');
+      });
+    }
+
+    setTextHighlighted(prevState => !prevState);
   };
+    /* конец кнопки */
+
+    /* кнопка увеличения шрифта на 200% */
+const [textHighlighted1, setTextHighlighted1] = useState(false);
+
+const handleButtonClicked1 = () => {
+  if (!textHighlighted) {
+    const allTextElements = document.querySelectorAll('p, span, h1, h2, h3, h4, h5, h6, li, td, a');
+    allTextElements.forEach(element => {
+      element.style.setProperty('--base-font-size', '24px'); // Здесь меняем размер шрифта на 24px
+    });
+  } else {
+    const allTextElements = document.querySelectorAll('p, span, h1, h2, h3, h4, h5, h6, li, td, a');
+    allTextElements.forEach(element => {
+      element.style.color = 'inherit';
+      element.style.removeProperty('--base-font-size');
+    });
+  }
+
+  setTextHighlighted1(prevState => !prevState);
+};
+  /* конец кнопки */
+
+
+  /* кнопка расстояния между буквами */
+  const [lettersSpacing, setLettersSpacing] = useState(false);
+
+  const letterClick = () => {
+    if (!lettersSpacing) {
+        const allTextElements = document.querySelectorAll('p, span, h1, h2, h3, h4, h5, h6, li, td, a');
+        allTextElements.forEach(element => {
+          element.style.setProperty('--letters-spacing', '0.48px'); 
+        });
+      }  else {
+        const allTextElements = document.querySelectorAll('p, span, h1, h2, h3, h4, h5, h6, li, td, a');
+        allTextElements.forEach(element => {
+          element.style.color = 'inherit';
+          element.style.removeProperty('--letters-spacing');
+        });
+      }
+      setLettersSpacing(prevState => !prevState);
+  };
+
+  /* конец кнопки */
     return(
         <div className={active ? "modal active" : "modal"}>
             <div className="modal_content" onClick={e => e.stopPropagation()}>
@@ -64,14 +128,15 @@ export default function SpecialFeaturesModal({active, setActive}) {
                         Размер шрифта
                         </h4>
                         <span className='wrapper'>
-                            <button className="wraper-btn">
+                            <button className={textHighlighted ? "wraper-btn active" : "wraper-btn no_active" } onClick={handleButtonClicked0}>
                             100%
                             </button>
 
-                            <button className="wraper-btn">
+                            <button className={textHighlighted ? "wraper-btn active" : "wraper-btn no_active" } onClick={handleButtonClicked}>
+                            {/* {textHighlighted ? 'Убрать выделение' : 'Выделить текст'} */}
                             150%
                             </button>
-                            <button className="wraper-btn">
+                            <button className={textHighlighted ? "wraper-btn active" : "wraper-btn no_active" } onClick={handleButtonClicked1}>
                             200%
                             </button>
                         </span>
@@ -86,7 +151,7 @@ export default function SpecialFeaturesModal({active, setActive}) {
                             Рекомендуемое
                             </button>
 
-                            <button className="wraper-btn">
+                            <button className="wraper-btn" onClick={letterClick}>
                             Большое
                             </button>
                             <button className="wraper-btn">
@@ -107,10 +172,10 @@ export default function SpecialFeaturesModal({active, setActive}) {
                             {/* <button className={active ? "wraper-btn active" : "wraper-btn no_active"} onClick={handleContrastToggle}>
                             Контрастный
                             </button> */}
-                            <button
-  className={isContrast ? "wraper-btn active" : "wraper-btn no_active"}
+                            <button>
+  {/* className={isContrast ? "wraper-btn active" : "wraper-btn no_active"}
   onClick={handleContrastToggle}
->
+> */}
   Контрастный
 </button>
                        </span>

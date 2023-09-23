@@ -17,4 +17,7 @@ body {
   --base-font-size: 16px;
   --one-font-size: 20px;
   --two-font-size: 24px;
+
+  --letters-spacing: normal;
+
 }

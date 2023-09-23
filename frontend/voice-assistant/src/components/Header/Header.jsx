@@ -15,7 +15,7 @@ import { useState } from "react";
 export default function Header() {
     const [modalActive, setModalActive] = useState(!true);
     return ( <>
-        <div className="firstLine">
+        {/* <div className="firstLine">
             <span className='place'><img src={placeIcon} alt="иконка места"></img> <p>Краснодар</p></span>
         <span className='btn-layout'>
 
@@ -26,7 +26,7 @@ export default function Header() {
         </span>
 
             <span>8-800-77-07-999 (с 03:00 до 22:00)</span>
-        </div>
+        </div> */}
 
     <header className='header' role="contentinfo">
 
@@ -55,6 +55,6 @@ export default function Header() {
                 </Link>
         </nav>
     </header>
-    <SpecialFeaturesModal active={modalActive} setActive={setModalActive}/>
+    {/* <SpecialFeaturesModal active={modalActive} setActive={setModalActive}/> */}
     </>)
 }
