@@ -1,0 +1,403 @@
+{
+  "all":[
+    {
+      "category": "бытовая техника",
+      "subcategory": "чайники",
+      "name": "Электрическая плита FLAMA CE 32011 B коричневый",
+      "priceBeforeDiscount": 7999,
+      "priceWithDiscount": 6999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "чайники",
+      "name": "Холодильник Bosch KGV36VI32S серебристый",
+      "priceBeforeDiscount": 23999,
+      "priceWithDiscount": 20999
+    },
+    {
+      "category": "смартфоны и фототехника",
+      "subcategory": "чайники",
+      "name": "Смартфон Apple iPhone 13 Pro 128GB зеленый",
+      "priceBeforeDiscount": 79999,
+      "priceWithDiscount": 74999
+    },
+    {
+      "category": "смартфоны и фототехника",
+      "subcategory": "чайники",
+      "name": "Camera Canon EOS R6 Kit 24-105mm f/4L IS USM",
+      "priceBeforeDiscount": 169999,
+      "priceWithDiscount": 159999
+    },
+    {
+      "category": "ПК, ноутбуки, переферия",
+      "subcategory": "чайники",
+      "name": "Ноутбук HP Pavilion 15-cs3013ur синий",
+      "priceBeforeDiscount": 36999,
+      "priceWithDiscount": 32999
+    },
+    {
+      "category": "ПК, ноутбуки, переферия",
+      "subcategory": "чайники",
+      "name": "Монитор Dell Ultrasharp U2719D черный",
+      "priceBeforeDiscount": 23999,
+      "priceWithDiscount": 20999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "чайники",
+      "name": "Пылесос Samsung VC18M31A0HP/WT белый",
+      "priceBeforeDiscount": 7999,
+      "priceWithDiscount": 6999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "чайники",
+      "name": "Стиральная машина Bosch WAJ20060OE белый",
+      "priceBeforeDiscount": 19999,
+      "priceWithDiscount": 17999
+    },
+    {
+      "category": "смартфоны и фототехника",
+      "subcategory": "чайники",
+      "name": "ФотоCamera Sony Alpha a6400 Kit 16-50mm OSS чёрный",
+      "priceBeforeDiscount": 59999,
+      "priceWithDiscount": 54999
+    },
+    {
+      "category": "смартфоны и фототехника",
+      "subcategory": "чайники",
+      "name": "Смартфон Xiaomi Redmi Note 10 64GB серый",
+      "priceBeforeDiscount": 15999,
+      "priceWithDiscount": 13999
+    },
+    {
+      "category": "ПК, ноутбуки, переферия",
+      "subcategory": "чайники",
+      "name": "Графический планшет Wacom Intuos Pro S PTH-460",
+      "priceBeforeDiscount": 19999,
+      "priceWithDiscount": 17999
+    },
+    {
+      "category": "ПК, ноутбуки, переферия",
+      "subcategory": "чайники",
+      "name": "Наушники Sennheiser HD 660 S черный",
+      "priceBeforeDiscount": 29999,
+      "priceWithDiscount": 26999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "печи",
+      "name": "Электрическая плита FLAMA CE 32011 B коричневый",
+      "priceBeforeDiscount": 7999,
+      "priceWithDiscount": 6999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "печи",
+      "name": "Газовая плита Bosch HGA323150R белый",
+      "priceBeforeDiscount": 8499,
+      "priceWithDiscount": 7499
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "холодильники",
+      "name": "Холодильник LG GA-B489 YEQZ серебристый",
+      "priceBeforeDiscount": 29999,
+      "priceWithDiscount": 26999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "холодильники",
+      "name": "Встраиваемый холодильник Siemens KI22LAF30 белый",
+      "priceBeforeDiscount": 32999,
+      "priceWithDiscount": 29999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "микроволновки",
+      "name": "Микроволновая печь Samsung MS23F301EAW/WT белый",
+      "priceBeforeDiscount": 4999,
+      "priceWithDiscount": 4499
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "микроволновки",
+      "name": "Микроволновая печь LG MH6349DPS серебристый",
+      "priceBeforeDiscount": 6999,
+      "priceWithDiscount": 6499
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "вытяжки",
+      "name": "Вытяжка Maunfeld MCA 60 E BL чёрный",
+      "priceBeforeDiscount": 5999,
+      "priceWithDiscount": 5499
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "вытяжки",
+      "name": "Вытяжка Bosch DHL785C белый",
+      "priceBeforeDiscount": 8499,
+      "priceWithDiscount": 7999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "посудомойки",
+      "name": "Посудомоечная машина Electrolux ESF5532LOX белый",
+      "priceBeforeDiscount": 19999,
+      "priceWithDiscount": 17999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "посудомойки",
+      "name": "Посудомоечная машина Siemens SN636X00ME серебристый",
+      "priceBeforeDiscount": 24999,
+      "priceWithDiscount": 22999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "чайники",
+      "name": "Чайник Bosch TWK3A011 серебристый",
+      "priceBeforeDiscount": 1499,
+      "priceWithDiscount": 1299
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "чайники",
+      "name": "Чайник Philips HD9359/90 стеклянный",
+      "priceBeforeDiscount": 1999,
+      "priceWithDiscount": 1799
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "смартфоны",
+      "name": "Смартфон Samsung Galaxy S22 Ultra 256GB черный",
+      "priceBeforeDiscount": 109999,
+      "priceWithDiscount": 99999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "смартфоны",
+      "name": "Смартфон Apple iPhone 14 Pro Max 512GB золотой",
+      "priceBeforeDiscount": 129999,
+      "priceWithDiscount": 119999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "фотоаппараты",
+      "name": "Зеркальная Camera Canon EOS 5D Mark IV",
+      "priceBeforeDiscount": 169999,
+      "priceWithDiscount": 159999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "фотоаппараты",
+      "name": "Компактная Camera Sony Cyber-shot RX100 VII",
+      "priceBeforeDiscount": 99999,
+      "priceWithDiscount": 89999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "объективы",
+      "name": "Объектив Canon EF 24-70mm f/2.8L II USM",
+      "priceBeforeDiscount": 25999,
+      "priceWithDiscount": 23999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "объективы",
+      "name": "Объектив Nikon AF-S NIKKOR 50mm f/1.8G",
+      "priceBeforeDiscount": 6999,
+      "priceWithDiscount": 5999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "переходники на объективы",
+      "name": "Переходник Fotodiox Pro EF to Micro Four Thirds",
+      "priceBeforeDiscount": 2999,
+      "priceWithDiscount": 2499
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "переходники на объективы",
+      "name": "Переходник Sony Alpha LA-EA4 A-Mount to E-Mount",
+      "priceBeforeDiscount": 3499,
+      "priceWithDiscount": 2999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "смартфоны",
+      "name": "Смартфон Xiaomi Redmi Note 11 128GB синий",
+      "priceBeforeDiscount": 18999,
+      "priceWithDiscount": 16999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "смартфоны",
+      "name": "Смартфон OnePlus 9 Pro 256GB черный",
+      "priceBeforeDiscount": 49999,
+      "priceWithDiscount": 44999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "фотоаппараты",
+      "name": "Зеркальная Camera Nikon D850",
+      "priceBeforeDiscount": 219999,
+      "priceWithDiscount": 199999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "фотоаппараты",
+      "name": "Компактная Camera Panasonic Lumix LX100 II",
+      "priceBeforeDiscount": 34999,
+      "priceWithDiscount": 31999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "ПК",
+      "name": "Настольный компьютер Acer Aspire TC-895-UA92",
+      "priceBeforeDiscount": 34999,
+      "priceWithDiscount": 31999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "ПК",
+      "name": "Геймерский ПК Alienware Aurora R12",
+      "priceBeforeDiscount": 89999,
+      "priceWithDiscount": 84999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "ноутбуки",
+      "name": "Ноутбук ASUS ROG Zephyrus G14 GA401IV-HE188T",
+      "priceBeforeDiscount": 84999,
+      "priceWithDiscount": 79999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "ноутбуки",
+      "name": "Ноутбук HP Spectre x360 14-ea0000ur",
+      "priceBeforeDiscount": 129999,
+      "priceWithDiscount": 119999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "наушники",
+      "name": "Беспроводные наушники Sony WH-1000XM4",
+      "priceBeforeDiscount": 19999,
+      "priceWithDiscount": 17999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "наушники",
+      "name": "Гарнитура HyperX Cloud II Red",
+      "priceBeforeDiscount": 7999,
+      "priceWithDiscount": 6999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "мышки",
+      "name": "Игровая мышка Logitech G Pro X Superlight",
+      "priceBeforeDiscount": 8999,
+      "priceWithDiscount": 7999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "мышки",
+      "name": "Беспроводная мышь Microsoft Modern Mobile",
+      "priceBeforeDiscount": 2999,
+      "priceWithDiscount": 2499
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "колонки",
+      "name": "Беспроводная колонка JBL Charge 4 черная",
+      "priceBeforeDiscount": 9999,
+      "priceWithDiscount": 8999
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "колонки",
+      "name": "Bluetooth колонка Ultimate Ears WONDERBOOM 2",
+      "priceBeforeDiscount": 4999,
+      "priceWithDiscount": 4499
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "ПК",
+      "name": "Настольный компьютер Acer Aspire TC-895-UA92",
+      "description": "Мощный настольный компьютер с Processorом Intel Core i5, 16 ГБ RAM и 1 ТБ HDD.",
+      "Requirement": {
+        "Processor": "Intel Core i5",
+        "Ram": "16 ГБ",
+        "Hdd": "1 ТБ HDD",
+        "Graphic": "NVIDIA GeForce GTX 1650",
+        "Oc": "Windows 10"
+        }
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "стиральные машины",
+      "name": "Стиральная машина Bosch WAJ20060OE белый",
+      "description": "Эффективная стиральная машина с белым корпусом. Volume загрузки 7 кг.",
+      "Requirement": {
+        "LoadVolume": "7 кг",
+        "LoadType": "Фронтальная",
+        "SpinSpeed": "1200 об/мин",
+        "EnergyClass": "A+++",
+        "WashingPrograms": "12 программ"
+      }
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "чайники",
+      "name": "Чайник Bosch TWK3A011 серебристый",
+      "description": "Электрический чайник с функцией автоматического отключения и Volumeом 1.7 литра.",
+      "Requirement": {
+        "Volume": "1.7 л",
+        "Power": "2200 Вт",
+        "HousingMaterial": "Нержавеющая сталь",
+        "AutoOff": "Да"
+      }
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "вытяжки",
+      "name": "Вытяжка Maunfeld MCA 60 E BL чёрный",
+      "description": "Чёрная вытяжка с регулируемой Powerю и эффективной системой фильтрации.",
+      "Requirement": {
+        "MaxPower": "800 м³/ч",
+        "SpeedLevel": "3",
+        "Lighting": "LED",
+        "Noise": "до 60 дБ",
+        "Width": "60 см"
+      }
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "смартфоны",
+      "name": "Смартфон Samsung Galaxy S22 Ultra 256GB черный",
+      "description": "Мощный смартфон с высококачественной камерой, большим дисплеем и вместительным хранилищем.",
+      "Requirement": {
+        "Display": "6.8 дюймов, Dynamic AMOLED 2X",
+        "Processor": "Exynos 2200 (5 нм)",
+        "Ram": "12 ГБ",
+        "Storage": "256 ГБ",
+        "Camera": "108+12+12+10 Мп"
+      }
+    },
+    {
+      "category": "бытовая техника",
+      "subcategory": "смартфоны",
+      "name": "Смартфон Apple iPhone 14 Pro Max 512GB золотой",
+      "description": "Мощный смартфон с передовыми технологиями, высококачественной камерой и большим Volumeом памяти.",
+      "Requirement": {
+        "Display": "6.7 дюймов, Super Retina XDR OLED",
+        "Processor": "Apple A16 Bionic (5 нм)",
+        "Ram": "8 ГБ",
+        "Storage": "512 ГБ",
+        "Camera": "48+12+12 Мп"
+      }
+    }
+  ]
+}
