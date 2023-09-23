@@ -2,6 +2,7 @@ import ProductCard from "../../components/ProductCard/ProductCard";
 import "./style.css";
 import dataMainPage from '../../constants/data-main-page.json';
 import line from '../../images/line.png';
+import gradient from '../../images/gradient.png';
 import VoiseAssistant from '../../components/VoiseAssistant/VoiseAssistant'
 import { useImageToggle } from "../../components/ImageToggleContext/ImageToggleContext";
 
@@ -23,11 +24,15 @@ export default function MainPage() {
                     Купи один смартфон, и получи второй в подарок!
                     </h3>
                     <h3 className="banner-desc">1 + 1 = 2</h3>
-                    {areImagesVisible && (
+                    {areImagesVisible && (<>
         <img 
-        src={line} alt="" 
+        src={line} alt=""
+        className="background-line" 
         />
-      )}
+        <img 
+        src={gradient} alt="" className="background-gradient"
+        />
+     </> )}
                     
                 </div>
                 <div className="cards-layout">
