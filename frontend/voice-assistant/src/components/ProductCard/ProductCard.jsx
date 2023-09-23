@@ -28,7 +28,6 @@ export default function ProductCard(product) {
         {/* <span className='btn-layout'> */}
             <BtnOutlined name_of_btn={"В избранное"} icon_for_btn={heartIconWh} />
             <BtnFilled name_of_btn={"Купить"} icon_for_btn={carttIconWh} />
-            {/* </span> */}
         </div>
     )
 }
