@@ -25,7 +25,7 @@ export default function Header() {
     <header className='header'>
 
         <span className='header-one_block'>
-        <Link to='/catalog'><img src={logo} alt="нажмите сюда для перехода на главную страницу"/></Link>
+        <Link to='/'><img src={logo} alt="нажмите сюда для перехода на главную страницу"/></Link>
 
             <InputSearch />
            

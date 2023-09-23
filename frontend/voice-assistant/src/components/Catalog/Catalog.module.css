@@ -27,3 +27,11 @@
     background-color: #c5c5c5;
     color: #fff;
 }
+
+/* Добавляем стиль для активной ссылки в зависимости от текущего пути */
+.sidebar_link.active {
+    background-color: #a0a0a0; /* Цвет для активной кнопки */
+    color: #fff;
+    border-radius: 12px;
+}
+
