@@ -10,93 +10,81 @@ import { useImageToggle } from '../ImageToggleContext/ImageToggleContext';
 export default function SpecialFeaturesModal({active, setActive}) {
     const [activeBtnAcc, setActiveBtnAcc] = useState(false);
 
-    /* кнопка шрифта на 100% */
-    const [textHighlighted0, setTextHighlighted0] = useState(false);
+    const [activeBtn1, setActiveBtn1] = useState(false);
+    const [activeBtn2, setActiveBtn2] = useState(false);
+    const [activeBtn3, setActiveBtn3] = useState(false);
 
-    const handleButtonClicked0 = () => {
-      if (!textHighlighted) {
-        const allTextElements = document.querySelectorAll('p, span, h1, h2, h3, h4, h5, h6, li, td, a');
-        allTextElements.forEach(element => {
-          element.style.setProperty('--base-font-size', '16px'); // Здесь меняем размер шрифта на 16px
-        });
-      } else {
-        const allTextElements = document.querySelectorAll('p, span, h1, h2, h3, h4, h5, h6, li, td, a');
-        allTextElements.forEach(element => {
-          element.style.color = 'inherit';
-          element.style.removeProperty('--base-font-size');
-        });
-      }
-  
-      setTextHighlighted0(prevState => !prevState);
-    };
+    const [activeBtn4, setActiveBtn4] = useState(false);
+    const [activeBtn5, setActiveBtn5] = useState(false);
+    const [activeBtn6, setActiveBtn6] = useState(false);
 
+    const [activeBtn7, setActiveBtn7] = useState(false);
+    const [activeBtn8, setActiveBtn8] = useState(false);
 
-   /* кнопка увеличения шрифта на 150% */
-const [textHighlighted, setTextHighlighted] = useState(false);
-
-  const handleButtonClicked = () => {
-    if (!textHighlighted) {
-      const allTextElements = document.querySelectorAll('p, span, h1, h2, h3, h4, h5, h6, li, td, a');
-      allTextElements.forEach(element => {
-        element.style.setProperty('--base-font-size', '20px'); // Здесь меняем размер шрифта на 20px
-      });
-    } else {
-      const allTextElements = document.querySelectorAll('p, span, h1, h2, h3, h4, h5, h6, li, td, a');
-      allTextElements.forEach(element => {
-        element.style.color = 'inherit';
-        element.style.removeProperty('--base-font-size');
-      });
-    }
-
-    setTextHighlighted(prevState => !prevState);
-  };
-
-
-    /* кнопка увеличения шрифта на 200% */
-const [textHighlighted1, setTextHighlighted1] = useState(false);
-
-const handleButtonClicked1 = () => {
-  if (!textHighlighted1) {
-    const allTextElements = document.querySelectorAll('p, span, h1, h2, h3, h4, h5, h6, li, td, a');
-    allTextElements.forEach(element => {
-      element.style.setProperty('--base-font-size', '24px'); // Здесь меняем размер шрифта на 24px
-    });
-  } else {
-    const allTextElements = document.querySelectorAll('p, span, h1, h2, h3, h4, h5, h6, li, td, a');
-    allTextElements.forEach(element => {
-      element.style.color = 'inherit';
-      element.style.removeProperty('--base-font-size');
-    });
-  }
-
-  setTextHighlighted1(prevState => !prevState);
-};
+    const [activeBtn9, setActiveBtn9] = useState(false);
+    const [activeBtn10, setActiveBtn10] = useState(false);
 
 /* кнопка расстояния между буквами 0*/
 const deleteLetterSpacing = () => {
     document.documentElement.style.setProperty('--letter-spacing', 'normal');
+    setActiveBtn4(true);
+    setActiveBtn5(false);
+    setActiveBtn6(false);
   };
 
   /* кнопка расстояния между буквами 1*/
   const increaseLetterSpacing = () => {
     document.documentElement.style.setProperty('--letter-spacing', '2px');
+    setActiveBtn4(false);
+    setActiveBtn5(true);
+    setActiveBtn6(false);
   };
-
-
 
     /* кнопка расстояния между буквами 2*/
     const increaseLetterSpacing2 = () => {
         document.documentElement.style.setProperty('--letter-spacing', '4px');
+        setActiveBtn4(false);
+    setActiveBtn5(false);
+    setActiveBtn6(true);
       };
+
+  /* шрифт на 100% */
+  const getBtnSize = () => {
+    document.documentElement.style.setProperty('--base-font-size', '16px');
+    setActiveBtn1(true);
+    setActiveBtn2(false);
+    setActiveBtn3(false);
+  };
+
+  /* шрифт на 150% */
+  const getBtnSize1 = () => {
+    document.documentElement.style.setProperty('--base-font-size', '20px');
+    setActiveBtn1(false);
+  setActiveBtn2(true);
+  setActiveBtn3(false);
+  };
+
+   /* шрифт на 200% */
+   const getBtnSize2 = () => {
+    document.documentElement.style.setProperty('--base-font-size', '24px');
+    setActiveBtn1(false);
+    setActiveBtn2(false);
+    setActiveBtn3(true);
+  };
+
     
 /* кнопка увеличения контрастности */
 const increaseContrast = () => {
     document.documentElement.style.setProperty('--contrast', '1.5');
+    setActiveBtn7(false);
+    setActiveBtn8(true);
   };
 
   /* кнопка уменьшения контрастности */
 const deleteContrast = () => {
     document.documentElement.style.setProperty('--contrast', '1');
+    setActiveBtn7(true);
+    setActiveBtn8(false);
   };
 
 /* кнопка отключения картинок */
@@ -141,16 +129,16 @@ const deleteContrast = () => {
                         Размер шрифта
                         </h4>
                         <span className='wrapper'>
-                            <button className={textHighlighted ? "wraper-btn active" : "wraper-btn no_active" } onClick={handleButtonClicked0}>
+                        <button className={ activeBtn1 ? "wraper-btn active" : "wraper-btn no_active"} onClick={getBtnSize}>
                             100%
-                            </button>
+                        </button>
 
-                            <button className={textHighlighted ? "wraper-btn active" : "wraper-btn no_active" } onClick={handleButtonClicked}>
+                        <button className={ activeBtn2 ? "wraper-btn active" : "wraper-btn no_active"} onClick={getBtnSize1}>
                             150%
-                            </button>
-                            <button className={textHighlighted ? "wraper-btn active" : "wraper-btn no_active" } onClick={handleButtonClicked1}>
+                        </button>
+                        <button className={ activeBtn3 ? "wraper-btn active" : "wraper-btn no_active"} onClick={getBtnSize2}>
                             200%
-                            </button>
+                        </button>
                         </span>
                     </span>
 
@@ -159,14 +147,14 @@ const deleteContrast = () => {
                         Расстояние между буквами
                         </h4>
                         <span className='wrapper'>
-                            <button className="wraper-btn" onClick={deleteLetterSpacing}>
+                            <button className={ activeBtn4 ? "wraper-btn active" : "wraper-btn no_active"} onClick={deleteLetterSpacing}>
                             Рекомендуемое
                             </button>
 
-                            <button className="wraper-btn" onClick={increaseLetterSpacing}>
+                            <button className={ activeBtn5 ? "wraper-btn active" : "wraper-btn no_active"} onClick={increaseLetterSpacing}>
                             Большое
                             </button>
-                            <button className="wraper-btn" onClick={increaseLetterSpacing2}>
+                            <button className={ activeBtn6 ? "wraper-btn active" : "wraper-btn no_active"} onClick={increaseLetterSpacing2}>
                             Очень большое
                             </button>
                         </span>
@@ -177,10 +165,10 @@ const deleteContrast = () => {
                         Цвет шрифта и фона
                         </h4>
                         <span className='wrapper'>
-                            <button className="wraper-btn" onClick={deleteContrast}>
+                            <button className={ activeBtn7 ? "wraper-btn active" : "wraper-btn no_active"} onClick={deleteContrast}>
                             Стандартный
                             </button>
-                            <button className="wraper-btn" onClick={increaseContrast}>
+                            <button className={ activeBtn8 ? "wraper-btn active" : "wraper-btn no_active"} onClick={increaseContrast}>
                             Контрастный
                             </button>
                        </span>
@@ -191,11 +179,11 @@ const deleteContrast = () => {
                         Изображения
                         </h4>
                         <span className='wrapper'>
-                            <button className="wraper-btn" onClick={resetImages}>
+                            <button className={ activeBtn9 ? "wraper-btn active" : "wraper-btn no_active"} onClick={() => { resetImages(); setActiveBtn9(true); setActiveBtn10(false); }}>
                             Цветные
                             </button>
 
-                            <button className="wraper-btn" onClick={toggleImages}>
+                            <button className={ activeBtn10 ? "wraper-btn active" : "wraper-btn no_active"} onClick={() => { toggleImages(); setActiveBtn9(false); setActiveBtn10(true); }}>
                             Отключить
                             </button>
                        </span>
@@ -203,8 +191,8 @@ const deleteContrast = () => {
                     </div>
 
                     <span className='wrapper'>
-        <BtnOutlined name_of_btn={"Отменить"} icon_for_btn={closeIcon}/> 
-        <BtnFilled name_of_btn={"Сохранить"} icon_for_btn={okIcon}/>
+        {/* <BtnOutlined name_of_btn={"Отменить"} icon_for_btn={closeIcon}/> 
+        <BtnFilled name_of_btn={"Сохранить"} icon_for_btn={okIcon}/> */}
         </span>
             </div>
         </div>
