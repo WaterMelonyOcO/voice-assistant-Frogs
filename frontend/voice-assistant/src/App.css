@@ -11,6 +11,8 @@
 
 body {
   background-color: #F2F2F2;
+  letter-spacing: var(--letter-spacing, 0px);
+  filter: contrast(var(--contrast, 1));
 }
 
 :root {

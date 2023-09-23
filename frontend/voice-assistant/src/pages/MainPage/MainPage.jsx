@@ -7,8 +7,9 @@ import "./style.css";
 import dataMainPage from '../../constants/data-main-page.json';
 import line from '../../images/line.png';
 
-
 export default function MainPage() {
+
+
     let mainData = Object.values(dataMainPage)[0];
     return(<>
         {/* <Header /> */}
@@ -27,7 +28,9 @@ export default function MainPage() {
                     Купи один смартфон, и получи второй в подарок!
                     </h3>
                     <h3 className="banner-desc">1 + 1 = 2</h3>
-                    <img src={line} alt="" />
+                    <img 
+                    src={line} alt="" 
+                    />
                 </div>
                 <div className="cards-layout">
                         { mainData.map((product) => (

@@ -4,9 +4,6 @@
     justify-content: space-between;
     align-items: flex-start;
 }
-.body-layout_leftside {
-
-}
 
 .main_header {
     font-size: 36px;
@@ -15,7 +12,9 @@
 }
 
 .banner {
-    background: var(--radial-gradient, radial-gradient(826.2% 153.83% at 1.39% 96.9%, #0265B0 0%, #0D8BC7 15.29%, #1AB3E2 43.09%, #0B82C6 71.25%, #014D9D 93.38%));
+    width: 90%;
+    height: 18em;
+    background: url("../../images/gradient.png");
     border-radius: 12px;
     margin-right: 20px;
     position: relative;
