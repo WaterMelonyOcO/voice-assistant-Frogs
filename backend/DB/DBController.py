@@ -1,6 +1,4 @@
-
-from peewee import *
-
+from backend.DB.ProductModel import Product
 
 class DBController:
 
