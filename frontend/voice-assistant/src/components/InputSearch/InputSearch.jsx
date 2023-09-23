@@ -13,9 +13,9 @@ export default function InputSearch() {
     return(
         <div className="input-with-icon">
         <span className='input-icon'>
-            <img src={searchIcon} alt={t("alt_search")}/>
+            <img src={searchIcon} alt=""/>
         </span>
-        <input type='serach' name="search-input" placeholder={t('placeholder')}className='search_input'></input>
+        <input type='serach' name="search-input" placeholder={t('placeholder')} className='search_input'></input>
     </div>
     )
 }

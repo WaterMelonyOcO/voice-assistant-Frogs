@@ -19,6 +19,8 @@ import pepIcon from './images/pep.png';
 import saverIcon from './images/saver.png';
 import { ImageToggleProvider } from './components/ImageToggleContext/ImageToggleContext';
 import { useTranslation } from "react-i18next";
+import Footer from './components/Footer/Footer';
+import SiteMapPage from './pages/SiteMapPage/SiteMapPage';
 
 
 function App() {
@@ -70,9 +72,11 @@ function App() {
               <Route path="cart/order" element={<OrderRegistration />} />
               <Route path="/favourites" element={<FavouritesPage />} />
               <Route path="/cart" element={<CartPage />} />
+              <Route path='/sitemap' element={<SiteMapPage />} />
             </Routes>
           </div>
           </div>
+          <Footer />
       </div>
 
       <SpecialFeaturesModal active={modalActive} setActive={setModalActive} />
