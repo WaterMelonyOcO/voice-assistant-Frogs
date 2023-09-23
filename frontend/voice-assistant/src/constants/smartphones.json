@@ -2,73 +2,73 @@
     "smartphones" : [
         {
             "category": "smartphones",
-            "title": "Смартфон Samsung Galaxy S22 Ultra 256GB черный",
+            "name": "Смартфон Samsung Galaxy S22 Ultra 256GB черный",
             "price_before": 109999,
             "price_after": 99999
         },
         {
             "category": "smartphones",
-            "title": "Смартфон Apple iPhone 14 Pro Max 512GB золотой",
+            "name": "Смартфон Apple iPhone 14 Pro Max 512GB золотой",
             "price_before": 125999,
             "price_after": 100999
         },
         {
             "category": "smartphones",
-            "title": "Зеркальная камера Canon EOS 5D Mark IV",
+            "name": "Зеркальная камера Canon EOS 5D Mark IV",
             "price_before": 87999,
             "price_after": 85999
         },
         {
             "category": "smartphones",
-            "title": "Компактная камера Sony Cyber-shot RX100 VII",
+            "name": "Компактная камера Sony Cyber-shot RX100 VII",
             "price_before": 44999,
             "price_after": 42999
         },
         {
             "category": "smartphones",
-            "title": "Объектив Canon EF 24-70mm f/2.8L II USM",
+            "name": "Объектив Canon EF 24-70mm f/2.8L II USM",
             "price_before": 22999,
             "price_after": 19999
         },
         {
             "category": "smartphones",
-            "title": "Объектив Nikon AF-S NIKKOR 50mm f/1.8G",
+            "name": "Объектив Nikon AF-S NIKKOR 50mm f/1.8G",
             "price_before": 29999,
             "price_after": 22999
         },
         {
             "category": "smartphones",
-            "title": "Переходник Fotodiox Pro EF to Micro Four Thirds",
+            "name": "Переходник Fotodiox Pro EF to Micro Four Thirds",
             "price_before": 1499,
             "price_after": 1399
         },
         {
             "category": "smartphones",
-            "title": "Переходник Sony Alpha LA-EA4 A-Mount to E-Mount",
+            "name": "Переходник Sony Alpha LA-EA4 A-Mount to E-Mount",
             "price_before": 699,
             "price_after": 599
         },
         {
             "category": "smartphones",
-            "title": "Смартфон Xiaomi Redmi Note 11 128GB синий",
+            "name": "Смартфон Xiaomi Redmi Note 11 128GB синий",
             "price_before": 68099,
             "price_after": 65099
         },
         {
             "category": "smartphones",
-            "title": "Смартфон OnePlus 9 Pro 256GB черный",
+            "name": "Смартфон OnePlus 9 Pro 256GB черный",
             "price_before": 618099,
             "price_after": 605099
         },
         {
             "category": "smartphones",
-            "title": "Зеркальная камера Nikon D850",
+            "name": "Зеркальная камера Nikon D850",
             "price_before": 80099,
             "price_after": 50099
         }, 
         {
             "category": "smartphones",
-            "title": "Компактная камера Panasonic Lumix LX100 II",
+            "name": "Компактная камера Panasonic Lumix LX100 II",
             "price_before": 43099,
             "price_after": 40009
         } 

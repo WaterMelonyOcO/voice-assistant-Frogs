@@ -10,9 +10,16 @@ import profileIcon from '../../images/profilw.png';
 import InputSearch from '../InputSearch/InputSearch';
 import { Link } from "react-router-dom";
 import SpecialFeaturesModal from "../SpecialFeaturesModal/SpecialFeaturesModal";
-import { useState } from "react";
+import React, { useState } from "react";
+import VoiseAssistant from '../VoiseAssistant/VoiseAssistant';
+
 export default function Header() {
-    const [modalActive, setModalActive] = useState(!true);
+    const [modalActive, setModalActive] = React.useState(false);
+    const [modalVoiceAssistantActive, setModalVoiceAssistantActive] = React.useState(false);
+
+
+
+    
     return ( <>
         <div className="firstLine">
             <span className='place'><img src={placeIcon} alt="иконка места"></img> <p>Краснодар</p></span>
@@ -20,7 +27,7 @@ export default function Header() {
 
             <button className='btn_header btn-lang' title="Cмена языка"><img src={worldIcon} alt="смена языка"/> Русский</button>
             <button className='btn_header btn-acc' onClick={() => setModalActive(true)} title="Кнопка редактирования страницы со спец. возможностями"><img src={pepIcon} alt="спец.возможности"/> Спец.возможности</button>
-            <button className='btn_header btn-help' title="Кнопка открытия голосового помощника"><img src={saverIcon} alt="голосовой помощник"/>Голосовой помощник</button>
+            <button className='btn_header btn-help' title="Кнопка открытия голосового помощника" onClick={() => setModalVoiceAssistantActive(true)}><img src={saverIcon} alt="голосовой помощник"/>Голосовой помощник</button>
 
         </span>
 
@@ -55,5 +62,6 @@ export default function Header() {
         </nav>
     </header>
     <SpecialFeaturesModal active={modalActive} setActive={setModalActive}/>
+    <VoiseAssistant active={modalVoiceAssistantActive} setActive={setModalVoiceAssistantActive}/>
     </>)
 }
