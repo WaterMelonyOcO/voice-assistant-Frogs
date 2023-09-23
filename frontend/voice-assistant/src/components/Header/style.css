@@ -53,12 +53,14 @@
     align-items: center;
     gap: 25px;
 }
-.btn-nav {
-    padding: 5px 10px;
-}
 .btn-nav1 {
     display: flex;
     flex-direction: column;
     padding: 5px 10px;
     background-color: #fff;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
 }

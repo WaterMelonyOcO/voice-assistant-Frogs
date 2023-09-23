@@ -58,3 +58,13 @@
 .form-btn:focus {
     border: 2px solid black;
 }
+
+.btn_with_icon {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top:-4px;
+    left: 9em;
+}
