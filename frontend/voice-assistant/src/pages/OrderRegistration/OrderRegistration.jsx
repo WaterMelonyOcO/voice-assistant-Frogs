@@ -2,12 +2,11 @@ import './style.css';
 import Header from '../../components/Header/Header';
 import Catalog from '../../components/Catalog/Catalog';
 import cartIcon from '../../images/cart.png';
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import ModalConfirm from '../../components/ModalConfirm/ModalConfirm';
 
 export default function OrderRegistration() {
-    const [modalActive, setModalActive] = useState(true);
+    const [modalActive, setModalActive] = useState(!true);
     return (<>
         <Header />
 
@@ -72,13 +71,14 @@ export default function OrderRegistration() {
 
                    
                         <div className='btn_with_icon'>
-                            <input type='submit' value="Оплатить" name="submit" className='form-btn newbtn' onClick={() => setModalActive(true)}/>
+                            <input type='submit' value="Оплатить" name="submit" className='form-btn newbtn' onClick={() => setModalActive(true)} />
                             <img src={cartIcon} alt="" className='icon'/>
                         </div>
-                    
                 </form>
-                <ModalConfirm active={modalActive} setActive={setModalActive}/>
+                
             </div>
+            
         </div>
+        <ModalConfirm active={modalActive} setActive={setModalActive}/>
         </>)
 }

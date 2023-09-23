@@ -1,13 +1,9 @@
 import './style.css';
 import closeIcon from '../../images/close2.png';
 import okIcon from '../../images/success.png';
-import BtnOutlined from '../BtnOutlined/BtnOutlined';
-import BtnFilled from '../BtnFilled/BtnFilled';
-import { useState } from 'react';
 
 export default function ModalConfirm({active, setActive}) {
 
-    const [activeBtnAcc, setActiveBtnAcc] = useState(false);
     return(<>
     <div className={active ? "modal active" : "modal"}>
             <div className="modal_content" onClick={e => e.stopPropagation()}>
@@ -25,8 +21,18 @@ export default function ModalConfirm({active, setActive}) {
                     </div>
 
                     <span className='wrapper'>
-        <BtnOutlined name_of_btn={"Отмена"} icon_for_btn={closeIcon}/> 
-        <BtnFilled name_of_btn={"Да, оплатить"} icon_for_btn={okIcon}/>
+
+                    {/* onClick={() => setActive(false)} */}
+        <button className='btn-outlined' >
+            <img src={closeIcon} alt="иконка для кнопки"/>
+            Отмена
+        </button>
+
+        {/* onClick={() => setActive(false)} */}
+        <button className='btn-filled'>
+            <img src={okIcon} alt="иконка для кнопки"/>
+            Да, оплатить
+        </button>
         </span>
             </div>
         </div>
