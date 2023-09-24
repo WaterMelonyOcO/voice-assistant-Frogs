@@ -1,8 +1,8 @@
-from Models.ProductModel import Product, ProductRequirement
-from Models.types import *
+from .Models.ProductModel import Product, ProductRequirement
 from peewee import SqliteDatabase
+from os import path
 
-db = SqliteDatabase("./product.db")
+db = SqliteDatabase(path.abspath("DB/product.db"))
 
 
 class DBController:
@@ -16,7 +16,6 @@ class DBController:
 
         ProductName = ProductName.capitalize()
         query = (Product.select()
-                # .join(Product)
                 .where( Product.name.contains(ProductName) ))
         return [i.__data__ for i in query]
 
