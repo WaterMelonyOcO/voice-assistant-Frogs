@@ -1,15 +1,15 @@
-from Models.ProductModel import Product, ProductRequirement
-from Models.types import *
-from peewee import SqliteDatabase
-
-db = SqliteDatabase("./product.db")
+from .Models.ProductModel import Product, ProductRequirement
+from peewee import SqliteDatabase, Model
+from os.path import abspath
+import re
+# db = SqliteDatabase(abspath("backend/DB/product.db"))
 
 
 class DBController:
 
-    def __init__(self) -> None:
-        Product._meta.database = db
-        ProductRequirement._meta.database = db
+    # def __init__(self) -> None:
+    #     Product._meta.database = db
+    #     ProductRequirement._meta.database = db
 
 
     def GetProductViaName(self, ProductName: str):
@@ -35,7 +35,7 @@ class DBController:
         query = Product.select()
 
         var = query.where(
-            Product.category == Productcategory
+            Product.category.contains(Productcategory)
         )
 
         return [i.__data__ for i in var ]
@@ -49,3 +49,13 @@ class DBController:
         )
 
         return [i.__data__ for i in result ]
+    
+    def GetTableProperties(self, DBChoise: int = 0, DBModel: list[Model] = [Product, ProductRequirement]):
+
+        field_names = [field for field in DBModel[DBChoise]._meta.fields]
+        return field_names
+    
+    def GetTableSubcategoryValue(self, property: str, DBChoise: int = 0, DBModel: list[Model] = [Product, ProductRequirement]):
+
+        fields = [getattr(field, property) for field in DBModel[DBChoise].select()]
+        return fields

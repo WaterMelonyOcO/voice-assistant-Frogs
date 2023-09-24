@@ -1,6 +1,7 @@
 from peewee import *
+from pathlib import Path
 
-db = SqliteDatabase("./product.db")
+db = SqliteDatabase(Path("DB/product.db").resolve())
 
 
 class BaseModel(Model):
