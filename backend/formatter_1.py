@@ -28,5 +28,3 @@ def extract_parameters(text: str):
     
     # info = ProductRequirement.select().get().__data__
     return {"reqv": reqv}
-
-print(extract_parameters("найди смартфон Bosch KGV36VI32S"))
