@@ -10,6 +10,7 @@ import VoiseAssistant from '../VoiseAssistant/VoiseAssistant';
 import React, { useState } from "react";
 
 import { useTranslation } from "react-i18next";
+import BurgerMenu from "../BurgerMenu/BurgerMenu";
 
 export default function Header() {
     const location = useLocation();
@@ -29,7 +30,10 @@ export default function Header() {
         <span className='header-one_block'>
         <Link to='/main'><img src={logo} alt={t("alt_logo")} title={t("alt_logo")}/></Link>
 
-            <InputSearch />
+    <span className="header-one_block-hidden">
+      <InputSearch />
+    </span>
+            
            
         </span>
 
@@ -53,6 +57,10 @@ export default function Header() {
         </div>
       </Link>
     </nav>
+
+     <nav className="header__nav_hidden">
+      <BurgerMenu />
+    </nav> 
     </header>
     {/* <SpecialFeaturesModal active={modalActive} setActive={setModalActive}/> */}
 {/* <VoiseAssistant active={modalVoiceAssistantActive} setActive={setModalVoiceAssistantActive}/> */}

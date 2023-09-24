@@ -7,7 +7,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     padding: 50px 80px;
-    margin: 50px 0;
+    margin: 50px 0 100px;
 }
 .body_link {
     margin: 10px 30px;

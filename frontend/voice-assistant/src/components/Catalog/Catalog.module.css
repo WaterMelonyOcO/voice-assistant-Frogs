@@ -38,3 +38,21 @@
     border-radius: 12px;
 }
 
+@media screen and (max-width: 1110px) {
+    .sidebar {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto;
+    }
+    
+}
+
+@media screen and (max-width: 715px) {
+    .sidebar {
+        margin: 30px auto;
+    }
+    
+}

@@ -80,3 +80,22 @@
     color: #fff;
     border-radius: 12px;
 }
+.header__nav_hidden {
+    display: none;
+    padding-right: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+    .header__nav {
+        display: none;
+    }
+    .header__nav_hidden {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .header-one_block-hidden {
+        display: none;
+    }
+}

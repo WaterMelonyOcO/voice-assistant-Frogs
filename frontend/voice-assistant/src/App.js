@@ -94,7 +94,7 @@ const handleChangeLanguage = () => {
 
         </span>
 
-            <span>8-800-77-07-999 ({t("time")})</span>
+            <span className='hidden_number'>8-800-77-07-999 ({t("time")})</span>
         </div>
         <Header />
 

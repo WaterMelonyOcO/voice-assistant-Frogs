@@ -23,20 +23,21 @@ export default function ProductCard(product) {
     let products = Object.values(product)[0];
     console.log(products)
     return (
-        <div role="button" alt={`товар ${products.name}`} className='card-body'>
+        /* alt={`товар ${products.name}`} */
+        <div role="button" className='card-body' tabIndex="0">
             {areImagesVisible && (
         <img src={randomImage} alt={`картинка товара ${products.name}`}/>
       )}
             
-            <h4 className='card-header' >
+            <h4 className='card-header' aria-hidden="true">
                 {products.name}
             </h4>
         
             <span className='price'>
-                <p className='price_before' aria-label={products.price_before}>
+                <p className='price_before' aria-label={`цена до скидки ${products.price_before}`}>
                 {products.price_before} ₽
                 </p>
-                <h5 className='price_after' aria-label={products.price_after}>
+                <h5 className='price_after' aria-label={`цена со скидкой ${products.price_after}`}>
                     {products.price_after} ₽
                 </h5>
             </span>

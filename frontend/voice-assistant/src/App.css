@@ -35,6 +35,7 @@ body {
   border: none;
   box-shadow: 0 5px 10px #808080;
   font-size: 30px;
+  z-index: 100;
 }
 .back-to-top:hover {
   background-color: #0e719f;
@@ -47,4 +48,78 @@ body {
 .app-container {
 overflow: hidden;
 
+}
+
+@media screen and (max-width: 1110px) {
+    .body-layout_leftside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .main-content {
+      width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+  .btn-layout {
+    display: flex;
+    gap: 25px !important;
+  }
+  
+}
+
+@media screen and (max-width: 845px) {
+  .btn-layout {
+    display: flex;
+    gap: 10px !important;
+  }
+  .btn_header1 {
+    gap: 0 !important;
+    padding: 5px !important;
+  }
+  .hidden_number {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .btn-layout {
+    gap: 5px !important;
+  }
+  .btn-help, .btn-acc {
+    max-width: 140px;
+  }
+  
+}
+
+@media screen and (max-width: 530px) {
+  .place {
+    display: none !important;
+  }
+  .firstLine {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .btn_header1 {
+    font-size: 0;
+  }
+  .btn-layout {
+    gap: 28px !important;
+  }
+  .firstLine {
+    justify-content: center !important;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .header {
+    margin: 0 5px !important;
+    padding: 20px 10px !important;
+
+  }
+  
 }
