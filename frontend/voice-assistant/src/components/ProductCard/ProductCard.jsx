@@ -23,7 +23,7 @@ export default function ProductCard(product) {
     let products = Object.values(product)[0];
     console.log(products)
     return (
-        <div role="button" alt={`товар ${products.name}`}className='card-body'>
+        <div role="button" alt={`товар ${products.name}`} className='card-body'>
             {areImagesVisible && (
         <img src={randomImage} alt={`картинка товара ${products.name}`}/>
       )}
