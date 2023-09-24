@@ -1,9 +1,9 @@
 import './App.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import MainPage from './pages/MainPage/MainPage';
-import AppliancesPage from './pages/MainPage/AppliancesPage';
-import ComputersPage from './pages/MainPage/ComputersPage';
-import SmartPhonesPage from './pages/MainPage/SmartPhonesPage';
+import MainPage from './pages/Pages/MainPage';
+import AppliancesPage from './pages/Pages/AppliancesPage';
+import ComputersPage from './pages/Pages/ComputersPage';
+import SmartPhonesPage from './pages/Pages/SmartPhonesPage';
 import LoginPage from './pages/LoginPage/LoginPage';
 import OrderRegistration from './pages/OrderRegistration/OrderRegistration';
 import FavouritesPage from './pages/FavouritesPage/FavouritesPage';
@@ -21,17 +21,20 @@ import { ImageToggleProvider } from './components/ImageToggleContext/ImageToggle
 import { useTranslation } from "react-i18next";
 import Footer from './components/Footer/Footer';
 import SiteMapPage from './pages/SiteMapPage/SiteMapPage';
+import VoiseAssistant from './components/VoiseAssistant/VoiseAssistant';
+
 
 
 function App() {
 
-  const { t, i18n } = useTranslation();
 
+  const { t, i18n } = useTranslation();
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
   };
 
   const [modalActive, setModalActive] = useState(!true);
+
 
   /* btn scroll to top */
   const [showButton, setShowButton] = useState(false);
@@ -65,12 +68,16 @@ const handleChangeLanguage = () => {
   }
 };
 
+const [modalVoiseActive, setModalVoiseActive ] = useState(false);
+
 /* for modal  */
 
   return ( <>
   
     <ImageToggleProvider>
     <BrowserRouter>
+ 
+
 
     <div style={{ overflowX: 'hidden', overflowY: 'hidden' }}>
     <Routes>
@@ -96,6 +103,7 @@ const handleChangeLanguage = () => {
 
             <span className='hidden_number'>8-800-77-07-999 ({t("time")})</span>
         </div>
+
         <Header />
 
         <div className="body-layout">
@@ -124,6 +132,8 @@ const handleChangeLanguage = () => {
       )}
 
       <SpecialFeaturesModal active={modalActive} setActive={setModalActive} />
+    <VoiseAssistant active={modalVoiseActive} setActive={setModalVoiseActive}/>
+     
     </BrowserRouter>
     </ImageToggleProvider>
 

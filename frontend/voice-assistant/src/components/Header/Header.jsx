@@ -22,10 +22,10 @@ export default function Header() {
   };
 
     const [modalActive, setModalActive] = useState(!true);
-    return ( 
-        <>
-
-    <header className='header' role="contentinfo">
+   
+    return ( <>
+      
+    <header className='header'>
 
         <span className='header-one_block'>
         <Link to='/main'><img src={logo} alt={t("alt_logo")} title={t("alt_logo")}/></Link>
