@@ -16,17 +16,27 @@
     background-color:transparent;
     border: none;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
     padding: 10px;
 }
-.btn_header:hover {
+.btn_header1 {
+    background-color:transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.btn_header:hover, .btn_header1:hover {
     background-color: #c5c5c5;
     cursor: pointer;
     border-radius: 12px;
 }
-.btn_header:active {
+.btn_header:active, .btn_header1:active {
     background-color: #a5a3a3;
     cursor: pointer;
     border-radius: 12px;
@@ -56,11 +66,17 @@
 .btn-nav1 {
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    /* padding: 5px 10px; */
     background-color: #fff;
 }
 
 .nav-link {
     text-decoration: none;
     color: black;
+}
+
+.activeB {
+    background-color: #6c6c6c;
+    color: #fff;
+    border-radius: 12px;
 }

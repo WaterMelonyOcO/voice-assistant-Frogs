@@ -4,7 +4,7 @@ import heartIcon from '../../images/heart.png';
 import carttIcon from '../../images/cart.png';
 import profileIcon from '../../images/profilw.png';
 import InputSearch from '../InputSearch/InputSearch';
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import SpecialFeaturesModal from "../SpecialFeaturesModal/SpecialFeaturesModal";
 import VoiseAssistant from '../VoiseAssistant/VoiseAssistant';
 import React, { useState } from "react";
@@ -12,6 +12,7 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 export default function Header() {
+    const location = useLocation();
 
     const { t, i18n } = useTranslation();
 
@@ -32,23 +33,26 @@ export default function Header() {
            
         </span>
 
-        <nav className='header__nav'>
-            <Link to="/favourites" className="nav-link">
-                <div role="button" className='btn_header btn-nav1'>
-                <img src={heartIcon} alt=""/>
-                {t("heart")}</div>
-            </Link>
-            <Link to="/cart" className="nav-link">
-                <div role="button" className='btn_header btn-nav1'>
-                <img src={carttIcon} alt=""/>
-                {t("cart")}</div>
-            </Link>
-            <Link to="/" className="nav-link">
-                <div role="button" className='btn_header btn-nav1'>
-                <img src={profileIcon} alt=""/>
-                {t("profile")}</div>
-                </Link>
-        </nav>
+        <nav className="header__nav">
+      <Link to="/favourites" className={`nav-link btn-nav1 ${location.pathname === "/favourites" ? "activeB" : ""}`}>
+        <div role="button" className="btn_header">
+          <img src={heartIcon} alt="" />
+          {t("heart")}
+        </div>
+      </Link>
+      <Link to="/cart" className={`nav-link btn-nav1 ${location.pathname === "/cart" ? "activeB" : ""}`}>
+        <div role="button" className="btn_header">
+          <img src={carttIcon} alt="" />
+          {t("cart")}
+        </div>
+      </Link>
+      <Link to="/" className={`nav-link btn-nav1 ${location.pathname === "/" ? "activeB" : ""}`}>
+        <div role="button" className="btn_header">
+          <img src={profileIcon} alt="" />
+          {t("profile")}
+        </div>
+      </Link>
+    </nav>
     </header>
     {/* <SpecialFeaturesModal active={modalActive} setActive={setModalActive}/> */}
 {/* <VoiseAssistant active={modalVoiceAssistantActive} setActive={setModalVoiceAssistantActive}/> */}

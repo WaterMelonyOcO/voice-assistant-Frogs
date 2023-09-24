@@ -82,12 +82,12 @@ const handleChangeLanguage = () => {
             <span className='place'><img src={placeIcon} alt=""></img> <p>{t("city")}</p></span>
         <span className='btn-layout'>
 
-            <button className='btn_header btn-lang' title={t("btn1")} onClick={handleChangeLanguage}><img src={worldIcon} alt=""/> 
+            <button className='btn_header1 btn-lang' title={t("btn1")} onClick={handleChangeLanguage}><img src={worldIcon} alt=""/> 
             {/* {t("lang")} */}
             {areLang === "ru" ? "Русский" : "English"}
             </button>
-            <button className='btn_header btn-acc' onClick={() => setModalActive(true)} title={t("btn2")}><img src={pepIcon} alt=""/> {t("one_btn")}</button>
-            <button className='btn_header btn-help' title={t("btn3")}><img src={saverIcon} alt=""/>{t("two_btn")}</button>
+            <button className='btn_header1 btn-acc' onClick={() => setModalActive(true)} title={t("btn2")}><img src={pepIcon} alt=""/> {t("one_btn")}</button>
+            <button className='btn_header1 btn-help' title={t("btn3")}><img src={saverIcon} alt=""/>{t("two_btn")}</button>
 
         </span>
 
