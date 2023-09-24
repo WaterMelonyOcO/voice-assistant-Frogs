@@ -2,6 +2,7 @@ import cgi
 from neiron import neuronGetText
 from os.path import abspath, join
 from http.server import BaseHTTPRequestHandler
+import json
 
 class NeuronVoiceProcessor:
 
@@ -13,14 +14,15 @@ class NeuronVoiceProcessor:
         r, info, fileName = self.deal_post_data()
         print(self.audio_path, fileName)
         print(r, info, "by: ", self.http.client_address)
-
-        neiton_result = neuronGetText(join(self.audio_path, fileName))
+       
+        neuron_result = neuronGetText(join(self.audio_path, fileName))
 
         self.http.send_response(200)
-        self.http.send_header("Content-type", "text/html")
+        self.http.send_header("Content-type", "application/json")
         # self.http.send_header("Content-Length", str(length))
         self.http.end_headers()
-        self.http.wfile.write(neiton_result.encode())
+        self.http.wfile.write(json.dumps(neuron_result).encode())
+        return
 
     def deal_post_data(self):
         ctype, pdict = cgi.parse_header(self.http.headers['Content-Type'])

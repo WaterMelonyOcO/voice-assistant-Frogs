@@ -18,6 +18,7 @@ class HttpHandler(BaseHTTPRequestHandler):
     def do_POST(self):        
         if ( self.path == "/api/neuron/"):
             neuronApiHandler.NeuronVoiceProcessor(self).returnNeuronAnswer()
+            return
         
         if (re.search( "/api/products/", self.path)):
             ctype, _ = cgi.parse_header(self.headers.get("content-type"))
