@@ -34,14 +34,14 @@ export default function ProductCard({ data, handleAddToCart }) {
   return (
           <div role="button" className='card-body' tabIndex="0">
                 {areImagesVisible && (
-        <img src={randomImage} alt={`картинка товара ${products.name}`}/>
+        <img src={randomImage} alt={`картинка товара ${data.name}`}/>
       )}
       <Link to={`/product/${encodeURIComponent(JSON.stringify(data))}`} className='card-body-link'>
     
         <h4 className='card-header' aria-hidden="true">{data.name}</h4>
         <span className='price'>
-          <p className='price_before' aria-label={`цена до скидки ${products.price_before}`}>{data.price_before} ₽</p>
-          <h5 className='price_after' aria-label={`цена со скидкой ${products.price_after}`}>{data.price_after} ₽</h5>
+          <p className='price_before' aria-label={`цена до скидки ${data.price_before}`}>{data.price_before} ₽</p>
+          <h5 className='price_after' aria-label={`цена со скидкой ${data.price_after}`}>{data.price_after} ₽</h5>
         </span>
       </Link>
       {/* <div className="btn-zone"> */}
