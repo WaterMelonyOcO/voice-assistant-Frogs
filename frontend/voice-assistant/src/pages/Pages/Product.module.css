@@ -1,15 +1,14 @@
 .product_details_modal {
-    max-width: 600px;
-    max-height: 300px;
+    max-width: 800px;
+    height: max-content;
+    max-height: 600px;
     flex-shrink: 0;
     border-radius: 8px;
     background: #FFF;
     margin: 24px;
     padding: 16px;
-    /* base */
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 1px 3px 0px rgba(0, 0, 0, 0.10);
     padding: 18px;
-    
+    margin-top: 50px;
 }
 
 .card_header{
@@ -20,20 +19,40 @@
     line-height: 80%;
     margin: 8px;
 }
+.card_p {
+    font-weight: bold;
+    padding: 20px 10px;
+    font-size: 18px;
+}
 .info_block{
     padding: 16px;
-    max-width: 600px;
-    max-height: 300px;
+    max-width: 800px;
+    width: max-content;
+    max-height: max-content;
     flex-shrink: 0;
     border-radius: 8px;
-background: #FFF;
-margin: 24px;
-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 1px 3px 0px rgba(0, 0, 0, 0.10);
+    background: #FFF;
+    margin: 24px;
+    padding: 18px;
+    margin-bottom: 100px;
 }
-
+.info_block_text {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
 .list_info{
     gap: 5px;
     display: flex;
-    margin: 8px;
     cursor: pointer;
+    
+}
+
+.list_info_p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    max-width: 830px;
+    width: 100%;
 }

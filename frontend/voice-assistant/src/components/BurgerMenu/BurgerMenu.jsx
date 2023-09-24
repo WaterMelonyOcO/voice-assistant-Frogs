@@ -26,20 +26,20 @@ const BurgerMenu = () => {
       {isOpen && (
         <div className="content">
           <ul className="burger-menu">
-            <li><a href="/main">Главная</a></li>
-            <li className="burger-menu_li"><a href="/main">Каталог</a>
+            <li><a href="/main">{t("title3")}</a></li>
+            <li className="burger-menu_li"><a href="/main">{t("header7")}</a>
                 <ul className="burger-menu_li_ul">
-                    <li><a href="/appliances">Бытовая техника</a></li>
-                    <li><a href="/smartphone">Смартфоны и фототехника</a></li>
-                    <li><a href="/computers">Компьютеры, ноутбуки, периферия</a></li>
+                    <li><a href="/appliances">{t("header2")}</a></li>
+                    <li><a href="/smartphone">{t("header3")}</a></li>
+                    <li><a href="/computers">{t("header4")}</a></li>
                 </ul>
             </li>
-            <li><a href="/favourites">Избранное</a></li>
-            <li><a href="/cart">Корзина</a></li>
-            <li><a href="/">Войти</a></li>
-            <li><a href="/sitemap">Карта сайта</a></li>
+            <li><a href="/favourites">{t("heart")}</a></li>
+            <li><a href="/cart">{t("cart")}</a></li>
+            <li><a href="/">{t("profile")}</a></li>
+            <li><a href="/sitemap">{t("footer_link")}</a></li>
             <li className="hidden_li">
-                8-800-77-07-999 (с 03:00 до 22:00)
+                8-800-77-07-999 ({t("time")})
             </li>
             <li className="hidden_li hidden_li2"> 
             <img src={placeIcon} alt=""></img> <p>{t("city")}</p>

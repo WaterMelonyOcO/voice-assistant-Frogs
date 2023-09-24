@@ -1,5 +1,14 @@
 import React from 'react';
-
+import test_1 from '../../images/image_1.png';
+import test_2 from '../../images/image_2.png';
+import test_3 from '../../images/image_3.png';
+import test_4 from '../../images/image_4.png';
+import test_5 from '../../images/image_5.png';
+import test_6 from '../../images/image_6.png';
+import test_7 from '../../images/image_7.png';
+import test_8 from '../../images/image_8.png';
+import { useTranslation } from "react-i18next";
+import { useImageToggle } from '../../components/ImageToggleContext/ImageToggleContext';
 
 import { useParams } from 'react-router-dom'; // Импортируйте useParams
 import styles from './Product.module.css'
@@ -12,18 +21,33 @@ export default function Product() {
     // В data теперь содержится переданный JSON
 
     const handleDetailsClick = () => {
-        // Добавьте здесь логику обработки клика, если она необходима
+    
     }
+    const { areImagesVisible } = useImageToggle();
+    const randomImages = [test_1, test_2, test_3, test_4, test_5, test_6, test_7, test_8];
+    const randomIndex = Math.floor(Math.random() * randomImages.length);
+    const randomImage = randomImages[randomIndex];
 
+
+    const { t, i18n } = useTranslation();
+    const changeLanguage = (language) => {
+      i18n.changeLanguage(language);
+    };
+  
     return (
 <>
 
 
 <div className={styles.product_details_modal} onClick={handleDetailsClick}>
               <h4 className={styles.card_header}>{data.name}</h4>
-            <img src={data.image} alt={`картинка товара ${data.name}`} />
+              {areImagesVisible && (
+        <img src={randomImage} alt={`картинка товара ${data.name}`}/>
+      )}
+      <p className={styles.card_p}> 
+      {t("r3")} {data.name} {t("r2")}
+      </p>
           
-            <span className='price'>
+            <span className={styles.price}>
                 <p className='price_before'>
                     {data.price_before} ₽
                 </p>
@@ -35,18 +59,12 @@ export default function Product() {
 <div className={styles.info_block}>
 <div className={styles.list_info}>
   
-<div>
-    Описание
-</div>
-<div>
-    Характеристики
-</div>
-<div>
-    Отзывы
-</div>
+<span className={styles.info_block_text}>
+    {t("r")}
+</span>
 
 </div>
-<p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
+<p className={styles.list_info_p}>{t("long_text")}</p>
 </div>
 </>
 
