@@ -92,5 +92,43 @@
         margin-top: 20px;
         visibility: visible;
       } 
+  }
+
+  @media screen and (max-width: 420px) {
+    .content {
+        right: -25px;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .content {
+        right: -45px;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .content {
+        right: -70px;
+    }
+  }
+
+  @media screen and (max-width: 340px) {
+    .content {
+        right: -60px;
+    }
+  }
+
+  
+  @media screen and (max-width: 340px) {
+    .content {
+        right: -60px;
+    }
+  }
+
+  @media screen and (max-width: 325px) {
+    .content {
+        width: 17em;
+        right: -45px;
+    }
     
   }
