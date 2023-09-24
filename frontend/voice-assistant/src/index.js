@@ -1,14 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React, { Suspense } from 'react';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import * as serviceWorker from './serviceWorker';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+// настройки плагина
+import './i18n';
+
+ReactDOM.render (
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <Suspense fallback={<div>Loading...</div>}>
+        <App />
+    </Suspense>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 
-// reportWebVitals();
+// serviceWorker.unregister();

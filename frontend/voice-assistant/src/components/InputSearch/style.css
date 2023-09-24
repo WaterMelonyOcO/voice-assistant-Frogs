@@ -14,9 +14,12 @@
 }
 
 .search_input {
-    width: 30em;
+    min-width: 22em;
+    width: 100%;
+    max-width: 30em;
     height: 45px;
     /* border: 1px solid gray; */
     border: none;
     padding: 20px 10px 20px 40px;
 }
+
