@@ -1,7 +1,7 @@
 from peewee import *
-from pathlib import Path
+from os import path
 
-db = SqliteDatabase(Path("DB/product.db").resolve())
+db = SqliteDatabase(path.abspath("DB/product.db"))
 
 
 class BaseModel(Model):
@@ -47,21 +47,3 @@ class ProductRequirement(BaseModel):
 
     class Meta:
         db_table="productRequirement"
-
-
-if __name__ == "__main__":
-
-    test = Product.select().get()
-    print(test)
-    # import json
-    # from os.path import abspath
-    # # from DBFillingEndpoint import fillingDB
-
-    # # db.create_tables([Product, ProductRequirement])
-
-    # # f = open('./test.json')
-    # # jsonData = json.load(f)
-
-    # # fillingDB(jsonData['all'], Product, ProductRequirement)
-
-# exclude=['DoesNotExist', '__module__', '__doc__', "__data__", "__rel__", "_meta", "_schema", "__repr__"]

@@ -1,8 +1,7 @@
-from http.server import BaseHTTPRequestHandler
 from http.server import HTTPServer
-import httpHandler
+from api import HttpHandler
 
-def run(server_class=HTTPServer, handler_class=BaseHTTPRequestHandler):
+def run(server_class=HTTPServer, handler_class=""):
   server_address = ('', 4500)
   httpd = server_class(server_address, handler_class)
   try:
@@ -10,4 +9,5 @@ def run(server_class=HTTPServer, handler_class=BaseHTTPRequestHandler):
   except KeyboardInterrupt:
       httpd.server_close()
 
-run(handler_class=httpHandler.voiceHttpHandler)
+
+run(handler_class=HttpHandler)
