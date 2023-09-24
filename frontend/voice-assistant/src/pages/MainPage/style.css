@@ -1,7 +1,7 @@
 .body-layout {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: flex-start;
 }
 
@@ -66,5 +66,5 @@
     column-gap: 50px;
     row-gap: 30px;
     justify-content: flex-end;
-    margin: 50px 0 50px;
+    margin: 50px 0 100px;
 }

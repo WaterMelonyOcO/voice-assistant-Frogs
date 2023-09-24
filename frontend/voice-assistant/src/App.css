@@ -36,3 +36,15 @@ body {
   box-shadow: 0 5px 10px #808080;
   font-size: 30px;
 }
+.back-to-top:hover {
+  background-color: #0e719f;
+  cursor: pointer;
+}
+.back-to-top:focus {
+  outline: 2px solid black; /* Пример стилизации фокусного состояния кнопки */
+}
+
+.app-container {
+overflow: hidden;
+
+}

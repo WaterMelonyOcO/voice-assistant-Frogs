@@ -3,7 +3,7 @@ import closeIcon from '../../images/close2.png';
 import okIcon from '../../images/success.png';
 import BtnOutlined from '../BtnOutlined/BtnOutlined';
 import BtnFilled from '../BtnFilled/BtnFilled';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useEffect } from 'react';
 import { useImageToggle } from '../ImageToggleContext/ImageToggleContext';
 import { useTranslation } from "react-i18next";
@@ -97,13 +97,21 @@ const deleteContrast = () => {
 /* кнопка отключения картинок */
 
     const { toggleImages } = useImageToggle();
-
     const { resetImages } = useImageToggle();
 
+    /***************/
+
+  const modalRef = useRef(null);
+
+  useEffect(() => {
+    if (active && modalRef.current) {
+      modalRef.current.focus();
+    }
+  }, [active]);
 
     return(
-        <div className={active ? "modal active" : "modal"}>
-            <div className="modal_content" onClick={e => e.stopPropagation()}>
+        <div className={active ? "modal active" : "modal"} tabIndex="-1" ref={modalRef}>
+            <div className="modal_content" onClick={e => e.stopPropagation()} >
             <div className='modal_header'>
                 <h2>{t("header8")}</h2>
                     <button onClick={() => setActive(false)} className='header-close_btn'> 

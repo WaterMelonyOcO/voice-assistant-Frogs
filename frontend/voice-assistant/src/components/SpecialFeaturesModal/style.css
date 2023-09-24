@@ -101,6 +101,9 @@
     background-color: #a9a6a6;
     cursor: pointer;
 }
+.wraper-btn:focus {
+    outline: 2px solid rgb(25, 78, 148);
+}
 
 .wordspacing1 {
     letter-spacing: 0.4px;

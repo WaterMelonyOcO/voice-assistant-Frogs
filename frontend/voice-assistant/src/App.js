@@ -9,7 +9,7 @@ import OrderRegistration from './pages/OrderRegistration/OrderRegistration';
 import FavouritesPage from './pages/FavouritesPage/FavouritesPage';
 import CartPage from './pages/CartPage/CartPage';
 import ProductPage from './pages/ProductPage/ProductPage';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Header from './components/Header/Header';
 import Catalog from './components/Catalog/Catalog';
 import SpecialFeaturesModal from './components/SpecialFeaturesModal/SpecialFeaturesModal';
@@ -64,6 +64,9 @@ const handleChangeLanguage = () => {
     setAreLang("ru");
   }
 };
+
+/* for modal  */
+
   return ( <>
   
     <ImageToggleProvider>
@@ -111,15 +114,16 @@ const handleChangeLanguage = () => {
             </Routes>
           </div>
           </div>
+          
           <Footer />
       </div>
-
-      <SpecialFeaturesModal active={modalActive} setActive={setModalActive} />
       {showButton && (
         <button onClick={scrollToTop} className="back-to-top">
           ⭱
         </button>
       )}
+
+      <SpecialFeaturesModal active={modalActive} setActive={setModalActive} />
     </BrowserRouter>
     </ImageToggleProvider>
 
