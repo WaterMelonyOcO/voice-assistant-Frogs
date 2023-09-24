@@ -67,7 +67,7 @@
 ![image](https://github.com/WaterMelonyOcO/voice-assistant-Frogs/assets/111881249/5d13b64f-e966-4719-9275-63cd99854d7a)
 ![image](https://github.com/WaterMelonyOcO/voice-assistant-Frogs/assets/111881249/9cbc8764-17cc-4798-a73b-68edd41dde11)
 
-Используемые технологии: react, react-redux, i18next, python, node.js
+Используемые технологии: react, react-redux, i18next, python, node.js, whisper, sqlite
 
 
 
