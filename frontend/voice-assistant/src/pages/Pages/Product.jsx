@@ -4,6 +4,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom'; // Импортируйте useParams
 import styles from './Product.module.css'
 
+
 export default function Product() {
     const { productId } = useParams(); // Получите параметры маршрута
     const data = JSON.parse(decodeURIComponent(productId)); // Преобразуйте обратно в объект
@@ -16,6 +17,8 @@ export default function Product() {
 
     return (
 <>
+
+
 <div className={styles.product_details_modal} onClick={handleDetailsClick}>
               <h4 className={styles.card_header}>{data.name}</h4>
             <img src={data.image} alt={`картинка товара ${data.name}`} />

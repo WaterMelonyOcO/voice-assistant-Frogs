@@ -24,6 +24,7 @@ export default function MainPage() {
                     <h3 className="banner-desc">1 + 1 = 2</h3>
                     <img src={line} alt="" />
                 </div>
+
                 <div className="cards-layout">
                         { mainData.map((product) => (
                         <ProductCard key={product.id} data={product}/>

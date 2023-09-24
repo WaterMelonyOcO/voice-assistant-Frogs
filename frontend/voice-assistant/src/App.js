@@ -6,9 +6,9 @@ import ComputersPage from './pages/Pages/ComputersPage';
 import SmartPhonesPage from './pages/Pages/SmartPhonesPage';
 import LoginPage from './pages/LoginPage/LoginPage';
 import OrderRegistration from './pages/OrderRegistration/OrderRegistration';
-import FavouritesPage from './pages/FavouritesPage/FavouritesPage';
+import FavoriteList from './pages/FavouritesPage/FavoriteList';
 import CartPage from './pages/CartPage/CartPage';
-import ProductPage from './pages/ProductPage/ProductPage';
+
 import React, { useEffect, useState } from 'react';
 import Header from './components/Header/Header';
 import Catalog from './components/Catalog/Catalog';
@@ -21,6 +21,7 @@ import VoiseAssistant from './components/VoiseAssistant/VoiseAssistant';
 import Product from './pages/Pages/Product';
 
 
+
 function App() {
 
  
@@ -29,6 +30,7 @@ function App() {
   const [modalActive, setModalActive] = useState(!true);
   const [modalVoiseActive, setModalVoiseActive ] = useState(false);
   return (
+
     <BrowserRouter>
  
 
@@ -67,7 +69,7 @@ function App() {
               <Route path="/smartphone" element={<SmartPhonesPage />} />
               <Route path="/computers" element={<ComputersPage />} />
               <Route path="cart/order" element={<OrderRegistration />} />
-              <Route path="/favourites" element={<FavouritesPage />} />
+              <Route path="/favourites" element={<FavoriteList />} />
               <Route path="/cart" element={<CartPage />} />
              
             </Routes>
