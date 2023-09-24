@@ -9,6 +9,8 @@
     align-items: center;
     gap: 5px;
     max-height: 50px;
+    width: 100%;
+    min-width: 160px;
 }
 .btn-outlined:hover {
     background-color: aliceblue;

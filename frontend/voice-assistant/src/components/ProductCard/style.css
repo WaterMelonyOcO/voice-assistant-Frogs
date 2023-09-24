@@ -18,16 +18,16 @@
     background-color: #fff;
     text-decoration:none;
     color: black;
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 240px 55px 28px 10px 30px;
-        /* display: flex;
+    grid-template-rows: 240px 55px 28px 10px 30px; */
+        display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
-
-     border-radius: 12px; */
+    margin-bottom: 20px;
+     border-radius: 12px;
 
 
 }
