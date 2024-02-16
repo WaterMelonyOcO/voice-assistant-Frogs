@@ -1,16 +1,18 @@
-# Site with voice-assistant from the Frogs team.
+# Site with voice-assistant from the Frogs team
 **ONLY FOR IAHD Web Accessibility Hackathon**
 ---------------
-ВИДЕО С ЮТУБА - https://youtu.be/Om387pdzwRY
+Видео с ютуба - https://youtu.be/Om387pdzwRY
 
 Другие видео - https://disk.yandex.ru/d/1yJnZUd3o6rzIw
 
+--------------
 
-**Ссылка на сайт** - http://seelssocute.ru/ (поддерживается только http протокол)
+Используемые технологии: React, CSS, react-router-dom, react-helmet, i18next, python, node.js, whisper, sqlite
+
 --------------
 Сайт с голосовым помощником от команды Frogs.
 
-Функционал голосового помощника реализован, но мы не успели его связать с фронтендом. Всю информацию можно посмотреть в папке "backend"
+Функционал голосового помощника реализован, но мы не успели его связать с фронтендом. Всю информацию можно посмотреть в ветке "backend"
 
 Преимущества сайта: 
 1. Упрощенная навигация – все ссылки на разделы сайта находятся на главной, ориентироваться можно как при помощи поиска в шапке и каталога слева, так и при помощи голосового помощника, который поможет перейти на страницы товаров. Также для упрощения понятия о местонахождении на странице, все главные ссылки имеют эффекты, по которым просто понять, где именно находится посетитель.
@@ -78,7 +80,6 @@
 ![image](https://github.com/WaterMelonyOcO/voice-assistant-Frogs/assets/111881249/5d13b64f-e966-4719-9275-63cd99854d7a)
 ![image](https://github.com/WaterMelonyOcO/voice-assistant-Frogs/assets/111881249/9cbc8764-17cc-4798-a73b-68edd41dde11)
 
-Используемые технологии: react, react-redux, i18next, python, node.js, whisper, sqlite
 
 
 
